@@ -116,8 +116,26 @@
   "aria_controller_button_size": {
     "message": "Controller button size in pixels"
   },
+  "controller_border_width_label": {
+    "message": "Controller border width<br /><em>Outline around the whole on-page controller (0 = no border). Max 12px. Live preview updates with the mock below.</em>"
+  },
+  "controller_border_color_label": {
+    "message": "Controller border color<br /><em>Color of the outline when width &gt; 0. Hex or CSS color; empty uses white. Spectrum picks a hex quickly.</em>"
+  },
+  "slider_border_none": {
+    "message": "0"
+  },
+  "slider_border_max": {
+    "message": "12px"
+  },
+  "aria_controller_border_width": {
+    "message": "Controller border width in pixels"
+  },
+  "aria_spectrum_controller_border": {
+    "message": "Spectrum for controller border color"
+  },
   "preview_heading_label": {
-    "message": "Approximate preview<br /><em>Rough mock on a checker pattern (transparency). Updates live from the sliders above; empty saved values use defaults (0.3 / 14px).</em>"
+    "message": "Approximate preview<br /><em>Rough mock on a checker pattern (opacity, size, border). Sliders above update live; empty saved values use defaults (opacity 0.3, size 14px, border off).</em>"
   },
   "speed_text_color_label": {
     "message": "Speed indicator text color<br /><em>Color of the playback-rate number on the in-page controller. Hex or CSS color; leave empty for default white. Use the spectrum for quick hex picks.</em>"
@@ -364,6 +382,12 @@
   },
   "appearance_meta_size_saved": {
     "message": "$1px text"
+  },
+  "appearance_meta_border_default": {
+    "message": "border off (default)"
+  },
+  "appearance_meta_border_on": {
+    "message": "border $1px · $2"
   },
   "font_cap_weight_live_default": {
     "message": "Live preview $1 — built-in default until you move & Save"

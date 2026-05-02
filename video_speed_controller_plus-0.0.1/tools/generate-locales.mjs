@@ -76,8 +76,18 @@ const en = {
   slider_opaque: msg('Opaque'),
   aria_controller_opacity: msg('Controller opacity'),
   aria_controller_button_size: msg('Controller button size in pixels'),
+  controller_border_width_label: msg(
+    'Controller border width<br /><em>Outline around the whole on-page controller (0 = no border). Max 12px. Live preview updates with the mock below.</em>',
+  ),
+  controller_border_color_label: msg(
+    'Controller border color<br /><em>Color of the outline when width &gt; 0. Hex or CSS color; empty uses white. Spectrum picks a hex quickly.</em>',
+  ),
+  slider_border_none: msg('0'),
+  slider_border_max: msg('12px'),
+  aria_controller_border_width: msg('Controller border width in pixels'),
+  aria_spectrum_controller_border: msg('Spectrum for controller border color'),
   preview_heading_label: msg(
-    'Approximate preview<br /><em>Rough mock on a checker pattern (transparency). Updates live from the sliders above; empty saved values use defaults (0.3 / 14px).</em>',
+    'Approximate preview<br /><em>Rough mock on a checker pattern (opacity, size, border). Sliders above update live; empty saved values use defaults (opacity 0.3, size 14px, border off).</em>',
   ),
   speed_text_color_label: msg(
     'Speed indicator text color<br /><em>Color of the playback-rate number on the in-page controller. Hex or CSS color; leave empty for default white. Use the spectrum for quick hex picks.</em>',
@@ -193,6 +203,8 @@ vsc-controller { top: 50px !important; }
   appearance_meta_opacity_saved: msg('opacity $1'),
   appearance_meta_size_default: msg('$1px text (default 14 until saved)'),
   appearance_meta_size_saved: msg('$1px text'),
+  appearance_meta_border_default: msg('border off (default)'),
+  appearance_meta_border_on: msg('border $1px · $2'),
   font_cap_weight_live_default: msg(
     'Live preview $1 — built-in default until you move & Save',
   ),
@@ -266,8 +278,18 @@ const ja = {
   slider_opaque: msg('不透明'),
   aria_controller_opacity: msg('コントローラーの不透明度'),
   aria_controller_button_size: msg('コントローラーのボタンサイズ（ピクセル）'),
+  controller_border_width_label: msg(
+    'コントローラーの枠線の太さ<br /><em>ページ内コントローラー全体の縁取り（0＝なし）。最大 12px。下のモックがリアルタイムで反映されます。</em>',
+  ),
+  controller_border_color_label: msg(
+    'コントローラーの枠線の色<br /><em>太さが 0 より大きいときの線の色です。16進または CSS 色。空欄で既定の白。スペクトラムで選べます。</em>',
+  ),
+  slider_border_none: msg('0'),
+  slider_border_max: msg('12px'),
+  aria_controller_border_width: msg('コントローラー枠線の太さ（ピクセル）'),
+  aria_spectrum_controller_border: msg('枠線色のスペクトラム'),
   preview_heading_label: msg(
-    'おおよそのプレビュー<br /><em>チェック背景上の簡易表示です。上のスライダーに連動します。未保存の空値は既定（0.3／14px）を使います。</em>',
+    'おおよそのプレビュー<br /><em>チェック背景上の簡易表示です。不透明度・サイズ・枠線が上のスライダーに連動します。未保存の空値は既定（不透明度 0.3、サイズ 14px、枠線なし）です。</em>',
   ),
   speed_text_color_label: msg(
     '速度表示の文字色<br /><em>ページ内コントローラーの再生速度数字の色です。16進または CSS 色。空欄で既定の白。スペクトラムで簡単に選べます。</em>',
@@ -373,6 +395,8 @@ const ja = {
   appearance_meta_opacity_saved: msg('不透明度 $1'),
   appearance_meta_size_default: msg('文字 $1px（保存まで既定 14）'),
   appearance_meta_size_saved: msg('文字 $1px'),
+  appearance_meta_border_default: msg('枠線なし（既定）'),
+  appearance_meta_border_on: msg('枠線 $1px · $2'),
   font_cap_weight_live_default: msg(
     'ライブプレビュー $1 — スライダーを動かして保存するまで組み込み既定',
   ),
@@ -464,8 +488,18 @@ const zhCN = {
   slider_opaque: msg('不透明'),
   aria_controller_opacity: msg('控制器不透明度'),
   aria_controller_button_size: msg('控制器按钮大小（像素）'),
+  controller_border_width_label: msg(
+    '控制器边框粗细<br /><em>围绕整条页内控制器的外框（0 = 无边框）。最大 12px。下方示意会实时反映。</em>',
+  ),
+  controller_border_color_label: msg(
+    '控制器边框颜色<br /><em>宽度大于 0 时边框的颜色。十六进制或 CSS 颜色；留空为默认白色。可用色谱快速选取。</em>',
+  ),
+  slider_border_none: msg('0'),
+  slider_border_max: msg('12px'),
+  aria_controller_border_width: msg('控制器边框宽度（像素）'),
+  aria_spectrum_controller_border: msg('边框颜色的色谱'),
   preview_heading_label: msg(
-    '大致预览<br /><em>在棋盘背景上的示意（透明度）。随上方滑块实时更新；未保存的空值使用默认（0.3 / 14px）。</em>',
+    '大致预览<br /><em>棋盘背景上的示意（不透明度、大小、边框）。上方滑块实时更新；未保存空值使用默认（不透明度 0.3、大小 14px、无边框）。</em>',
   ),
   speed_text_color_label: msg(
     '速度数字颜色<br /><em>页内控制器上播放速率数字的颜色。十六进制或 CSS 颜色；留空为默认白色。可用色谱快速选取。</em>',
@@ -561,6 +595,8 @@ const zhCN = {
   appearance_meta_opacity_saved: msg('不透明度 $1'),
   appearance_meta_size_default: msg('文字 $1px（保存前默认 14）'),
   appearance_meta_size_saved: msg('文字 $1px'),
+  appearance_meta_border_default: msg('无边框（默认）'),
+  appearance_meta_border_on: msg('边框 $1px · $2'),
   font_cap_weight_live_default: msg(
     '实时预览 $1 — 移动并保存前使用内置默认',
   ),

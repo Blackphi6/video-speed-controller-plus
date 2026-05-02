@@ -48,6 +48,11 @@
       'controllerPanelBackgroundColorSpectrum',
       '#000000',
     );
+    bindTextAndSpectrum(
+      'controllerBorderColor',
+      'controllerBorderColorSpectrum',
+      '#ffffff',
+    );
   }
 
   window.VSC.initControllerColorPickers = initControllerColorPickers;

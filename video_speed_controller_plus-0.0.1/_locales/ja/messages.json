@@ -116,8 +116,26 @@
   "aria_controller_button_size": {
     "message": "コントローラーのボタンサイズ（ピクセル）"
   },
+  "controller_border_width_label": {
+    "message": "コントローラーの枠線の太さ<br /><em>ページ内コントローラー全体の縁取り（0＝なし）。最大 12px。下のモックがリアルタイムで反映されます。</em>"
+  },
+  "controller_border_color_label": {
+    "message": "コントローラーの枠線の色<br /><em>太さが 0 より大きいときの線の色です。16進または CSS 色。空欄で既定の白。スペクトラムで選べます。</em>"
+  },
+  "slider_border_none": {
+    "message": "0"
+  },
+  "slider_border_max": {
+    "message": "12px"
+  },
+  "aria_controller_border_width": {
+    "message": "コントローラー枠線の太さ（ピクセル）"
+  },
+  "aria_spectrum_controller_border": {
+    "message": "枠線色のスペクトラム"
+  },
   "preview_heading_label": {
-    "message": "おおよそのプレビュー<br /><em>チェック背景上の簡易表示です。上のスライダーに連動します。未保存の空値は既定（0.3／14px）を使います。</em>"
+    "message": "おおよそのプレビュー<br /><em>チェック背景上の簡易表示です。不透明度・サイズ・枠線が上のスライダーに連動します。未保存の空値は既定（不透明度 0.3、サイズ 14px、枠線なし）です。</em>"
   },
   "speed_text_color_label": {
     "message": "速度表示の文字色<br /><em>ページ内コントローラーの再生速度数字の色です。16進または CSS 色。空欄で既定の白。スペクトラムで簡単に選べます。</em>"
@@ -364,6 +382,12 @@
   },
   "appearance_meta_size_saved": {
     "message": "文字 $1px"
+  },
+  "appearance_meta_border_default": {
+    "message": "枠線なし（既定）"
+  },
+  "appearance_meta_border_on": {
+    "message": "枠線 $1px · $2"
   },
   "font_cap_weight_live_default": {
     "message": "ライブプレビュー $1 — スライダーを動かして保存するまで組み込み既定"

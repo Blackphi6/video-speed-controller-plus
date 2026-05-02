@@ -134,6 +134,42 @@
             </div>
           </div>
         </div>
+        <div class="row">
+          <label for="controllerBorderWidthSlider" data-i18n-html="controller_border_width_label"></label>
+          <div class="controller-appearance-param controller-appearance-param--border-width">
+            <input type="hidden" id="controllerBorderWidth" value="" />
+            <div class="controller-appearance-param-head">
+              <span class="controller-appearance-param-value" id="controllerBorderWidthValueLabel">0 px</span>
+              <button type="button" class="controller-font-reset" id="controllerBorderWidthReset" data-i18n="btn_default"></button>
+            </div>
+            <div class="controller-appearance-slider-rail">
+              <span class="controller-appearance-slider-end" data-i18n="slider_border_none"></span>
+              <input
+                type="range"
+                id="controllerBorderWidthSlider"
+                min="0"
+                max="12"
+                step="1"
+                value="0"
+                data-i18n-aria-label="aria_controller_border_width"
+              />
+              <span class="controller-appearance-slider-end" data-i18n="slider_border_max"></span>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <label for="controllerBorderColor" data-i18n-html="controller_border_color_label"></label>
+          <div class="controller-color-field">
+            <input id="controllerBorderColor" type="text" value="" spellcheck="false" />
+            <input
+              id="controllerBorderColorSpectrum"
+              type="color"
+              class="controller-color-spectrum"
+              data-i18n-title="spectrum_title"
+              data-i18n-aria-label="aria_spectrum_controller_border"
+            />
+          </div>
+        </div>
         <div class="row controller-appearance-preview-row">
           <label class="controller-appearance-preview-label" id="controllerAppearancePreviewLabel" data-i18n-html="preview_heading_label"></label>
           <div class="controller-appearance-stage">

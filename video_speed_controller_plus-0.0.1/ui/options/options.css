@@ -490,6 +490,15 @@ input[type='number'] {
   );
 }
 
+.controller-appearance-param--border-width .controller-appearance-slider-rail input[type='range']::-webkit-slider-runnable-track {
+  background: linear-gradient(
+    90deg,
+    rgba(73, 69, 79, 0.2),
+    rgba(103, 80, 164, 0.55),
+    rgba(103, 80, 164, 0.92)
+  );
+}
+
 .controller-appearance-preview-row {
   align-items: flex-start;
 }
