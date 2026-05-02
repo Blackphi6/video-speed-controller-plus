@@ -1,0 +1,373 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title data-i18n="options_page_title"></title>
+    <link rel="stylesheet" href="options.css" />
+    <script src="../i18n.js"></script>
+    <script src="../theme-apply.js"></script>
+    <script src="../controller-color-ui.js"></script>
+    <script src="../controller-font-presets.js"></script>
+    <script src="../controller-font-tuning.js"></script>
+    <script src="../controller-appearance-preview.js"></script>
+    <script src="options.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <nav class="header-tabs">
+        <img src="../../assets/icons/icon48.png" alt="" class="header-icon" />
+        <button id="tab-settings" class="header-tab active" data-i18n="tab_settings"></button>
+        <button id="tab-advanced" class="header-tab" data-i18n="tab_advanced"></button>
+        <button id="tab-faq" class="header-tab" data-i18n="tab_faq"></button>
+      </nav>
+      <div class="split-button">
+        <button id="save" class="split-primary" data-i18n="btn_save"></button>
+        <button id="split-toggle" class="split-arrow" data-i18n-aria-label="aria_more_actions">&#9662;</button>
+        <div id="split-menu" class="split-dropdown" hidden>
+          <button id="import" data-i18n="btn_import"></button>
+          <button id="export" data-i18n="btn_export"></button>
+          <button id="restore" data-i18n="btn_restore"></button>
+        </div>
+        <input type="file" id="importFile" accept=".json" hidden />
+      </div>
+    </header>
+
+    <!-- ============ SETTINGS TAB ============ -->
+    <div id="panel-settings">
+      <section id="customs">
+        <h3 data-i18n="shortcuts_heading"></h3>
+        <div id="shortcuts-container"></div>
+        <button id="add" data-i18n="add_new"></button>
+      </section>
+
+      <section>
+        <h3 data-i18n="preferences_heading"></h3>
+        <div class="row">
+          <label for="audioBoolean" data-i18n-html="prefs_audio_label"></label>
+          <input id="audioBoolean" type="checkbox" />
+        </div>
+        <div class="row">
+          <label for="rememberSpeed" data-i18n-html="prefs_remember_label"></label>
+          <input id="rememberSpeed" type="checkbox" />
+        </div>
+        <div class="row">
+          <label for="startHidden" data-i18n-html="prefs_start_hidden_label"></label>
+          <input id="startHidden" type="checkbox" />
+        </div>
+        <div class="row">
+          <label for="exclusiveKeys" data-i18n-html="prefs_exclusive_label"></label>
+          <input id="exclusiveKeys" type="checkbox" />
+        </div>
+      </section>
+
+      <section id="appearance-settings" class="appearance-section">
+        <h3 data-i18n="appearance_heading"></h3>
+        <div class="row appearance-row">
+          <label for="ui-color-scheme" data-i18n-html="appearance_color_scheme_label"></label>
+          <select id="ui-color-scheme">
+            <option value="system" data-i18n="theme_system"></option>
+            <option value="light" data-i18n="theme_light"></option>
+            <option value="dark" data-i18n="theme_dark"></option>
+          </select>
+        </div>
+        <div class="row appearance-row">
+          <label for="ui-accent-preset" data-i18n-html="appearance_accent_label"></label>
+          <select id="ui-accent-preset">
+            <option value="violet" data-i18n="accent_violet"></option>
+            <option value="blue" data-i18n="accent_blue"></option>
+            <option value="teal" data-i18n="accent_teal"></option>
+            <option value="green" data-i18n="accent_green"></option>
+            <option value="rose" data-i18n="accent_rose"></option>
+            <option value="amber" data-i18n="accent_amber"></option>
+          </select>
+        </div>
+      </section>
+    </div>
+
+    <!-- ============ ADVANCED TAB ============ -->
+    <div id="panel-advanced" style="display: none">
+      <section>
+        <div class="row">
+          <label for="controllerOpacitySlider" data-i18n-html="controller_opacity_label"></label>
+          <div class="controller-appearance-param controller-appearance-param--opacity">
+            <input type="hidden" id="controllerOpacity" value="" />
+            <div class="controller-appearance-param-head">
+              <span class="controller-appearance-param-value" id="controllerOpacityValueLabel">0.30</span>
+              <button type="button" class="controller-font-reset" id="controllerOpacityReset" data-i18n="btn_default"></button>
+            </div>
+            <div class="controller-appearance-slider-rail">
+              <span class="controller-appearance-slider-end" data-i18n="slider_transparent"></span>
+              <input
+                type="range"
+                id="controllerOpacitySlider"
+                min="0"
+                max="1"
+                step="0.01"
+                value="0.3"
+                data-i18n-aria-label="aria_controller_opacity"
+              />
+              <span class="controller-appearance-slider-end" data-i18n="slider_opaque"></span>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <label for="controllerButtonSizeSlider" data-i18n-html="controller_button_size_label"></label>
+          <div class="controller-appearance-param controller-appearance-param--button-size">
+            <input type="hidden" id="controllerButtonSize" value="" />
+            <div class="controller-appearance-param-head">
+              <span class="controller-appearance-param-value" id="controllerButtonSizeValueLabel">14 px</span>
+              <button type="button" class="controller-font-reset" id="controllerButtonSizeReset" data-i18n="btn_default"></button>
+            </div>
+            <div class="controller-appearance-slider-rail">
+              <span class="controller-appearance-slider-end">8</span>
+              <input
+                type="range"
+                id="controllerButtonSizeSlider"
+                min="8"
+                max="48"
+                step="1"
+                value="14"
+                data-i18n-aria-label="aria_controller_button_size"
+              />
+              <span class="controller-appearance-slider-end">48</span>
+            </div>
+          </div>
+        </div>
+        <div class="row controller-appearance-preview-row">
+          <label class="controller-appearance-preview-label" id="controllerAppearancePreviewLabel" data-i18n-html="preview_heading_label"></label>
+          <div class="controller-appearance-stage">
+            <div
+              id="controllerAppearanceMock"
+              class="controller-appearance-mock"
+              role="img"
+              aria-labelledby="controllerAppearancePreviewLabel"
+            >
+              <span class="controller-appearance-speed">1.00</span>
+              <span class="controller-appearance-controls">
+                <button type="button" class="rw" tabindex="-1" disabled aria-hidden="true">&laquo;</button>
+                <button type="button" tabindex="-1" disabled aria-hidden="true">&minus;</button>
+                <button type="button" tabindex="-1" disabled aria-hidden="true">+</button>
+                <button type="button" class="rw" tabindex="-1" disabled aria-hidden="true">&raquo;</button>
+              </span>
+            </div>
+            <p id="controllerAppearancePreviewMeta" class="controller-appearance-meta"></p>
+          </div>
+        </div>
+        <div class="row">
+          <label for="controllerSpeedTextColor" data-i18n-html="speed_text_color_label"></label>
+          <div class="controller-color-field">
+            <input id="controllerSpeedTextColor" type="text" value="" spellcheck="false" />
+            <input
+              id="controllerSpeedTextColorSpectrum"
+              type="color"
+              class="controller-color-spectrum"
+              data-i18n-title="spectrum_title"
+              data-i18n-aria-label="aria_spectrum_speed_text"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <label for="controllerPanelBackgroundColor" data-i18n-html="panel_bg_label"></label>
+          <div class="controller-color-field">
+            <input id="controllerPanelBackgroundColor" type="text" value="" spellcheck="false" />
+            <input
+              id="controllerPanelBackgroundColorSpectrum"
+              type="color"
+              class="controller-color-spectrum"
+              data-i18n-title="spectrum_title"
+              data-i18n-aria-label="aria_spectrum_panel_bg"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <label for="controllerFontFamily" data-i18n-html="controller_font_label"></label>
+          <div class="controller-font-stack">
+            <div
+              id="controllerFontPresets"
+              class="controller-font-preset-strip"
+              role="group"
+              data-i18n-aria-label="aria_font_presets"
+            ></div>
+            <input
+              id="controllerFontFamily"
+              type="text"
+              value=""
+              spellcheck="false"
+              class="controller-font-input"
+              data-i18n-placeholder="placeholder_font_stack"
+            />
+          </div>
+        </div>
+        <div class="row controller-font-tuning-row">
+          <div class="controller-font-tuning-label-wrap">
+            <span class="controller-font-tuning-title" data-i18n="font_tuning_title"></span>
+            <em class="controller-font-tuning-desc" data-i18n-html="font_tuning_desc"></em>
+          </div>
+          <div class="controller-font-tuning-controls">
+            <input type="hidden" id="controllerFontWeight" value="" />
+            <input type="hidden" id="controllerFontStretch" value="" />
+            <div class="controller-font-slider-block" data-i18n-aria-label="font_weight_block">
+              <div class="controller-font-slider-top">
+                <span data-i18n="font_weight_block"></span>
+                <span class="controller-font-slider-meta" id="controllerFontWeightHint"></span>
+                <button type="button" class="controller-font-reset" id="controllerFontWeightReset" data-i18n="btn_reset"></button>
+              </div>
+              <div class="controller-font-slider-layout">
+                <div
+                  class="controller-font-stroke-meter controller-font-stroke-meter--weight"
+                  id="controllerFontWeightBars"
+                  aria-hidden="true"
+                  data-i18n-title="meter_weight_title"
+                ></div>
+                <div class="controller-font-slider-rail-wrap">
+                  <div class="controller-font-slider-rail controller-font-slider-rail--weight">
+                    <span class="controller-font-slider-end" data-i18n="slider_light"></span>
+                    <input
+                      type="range"
+                      id="controllerFontWeightSlider"
+                      min="100"
+                      max="900"
+                      step="100"
+                      value="400"
+                      aria-valuemin="100"
+                      aria-valuemax="900"
+                      data-i18n-aria-label="aria_font_weight"
+                    />
+                    <span class="controller-font-slider-end" data-i18n="slider_bold"></span>
+                  </div>
+                  <div class="controller-font-viz-scale">
+                    <span>100</span>
+                    <span class="controller-font-viz-scale-current" id="controllerFontWeightScaleLabel"
+                      >400</span
+                    >
+                    <span>900</span>
+                  </div>
+                </div>
+              </div>
+              <div class="controller-font-live-preview" id="controllerFontWeightLiveWrap">
+                <span class="controller-font-live-preview-aa" id="controllerFontWeightLiveAa">Aa</span>
+                <span class="controller-font-live-preview-caption" id="controllerFontWeightLiveCaption"></span>
+              </div>
+            </div>
+            <div class="controller-font-slider-block" data-i18n-aria-label="font_width_block">
+              <div class="controller-font-slider-top">
+                <span data-i18n="font_width_block"></span>
+                <button type="button" class="controller-font-reset" id="controllerFontStretchReset" data-i18n="btn_reset"></button>
+              </div>
+              <div class="controller-font-slider-layout">
+                <div
+                  class="controller-font-stroke-meter controller-font-stroke-meter--stretch"
+                  id="controllerFontStretchBars"
+                  aria-hidden="true"
+                  data-i18n-title="meter_width_title"
+                ></div>
+                <div class="controller-font-slider-rail-wrap">
+                  <div class="controller-font-slider-rail controller-font-slider-rail--stretch">
+                    <span class="controller-font-slider-end" data-i18n="slider_condensed"></span>
+                    <input
+                      type="range"
+                      id="controllerFontStretchSlider"
+                      min="50"
+                      max="200"
+                      step="5"
+                      value="100"
+                      aria-valuemin="50"
+                      aria-valuemax="200"
+                      data-i18n-aria-label="aria_font_width"
+                    />
+                    <span class="controller-font-slider-end" data-i18n="slider_wide"></span>
+                  </div>
+                  <div class="controller-font-viz-scale">
+                    <span>50%</span>
+                    <span class="controller-font-viz-scale-current" id="controllerFontStretchScaleLabel"
+                      >100%</span
+                    >
+                    <span>200%</span>
+                  </div>
+                </div>
+              </div>
+              <div class="controller-font-live-preview" id="controllerFontStretchLiveWrap">
+                <span class="controller-font-live-preview-aa controller-font-live-preview-aa--stretch" id="controllerFontStretchLiveAa">Aa</span>
+                <span class="controller-font-live-preview-caption" id="controllerFontStretchLiveCaption"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <label for="logLevel" data-i18n-html="log_level_label"></label>
+          <select id="logLevel">
+            <option value="1" data-i18n="log_none"></option>
+            <option value="2" data-i18n="log_error"></option>
+            <option value="3" data-i18n="log_warning"></option>
+            <option value="4" data-i18n="log_info"></option>
+            <option value="5" data-i18n="log_debug"></option>
+            <option value="6" data-i18n="log_verbose"></option>
+          </select>
+        </div>
+        <div class="row">
+          <label data-i18n-html="site_rules_label"></label>
+          <div id="site-rules-container">
+            <div class="site-rules-header">
+              <span data-i18n="site_rules_col_pattern"></span>
+              <span data-i18n="site_rules_col_disable"></span>
+              <span data-i18n="site_rules_col_speed"></span>
+            </div>
+          </div>
+          <button id="add-site-rule" data-i18n="add_site_rule"></button>
+          <div id="siteRulesValidation" class="css-validation"></div>
+        </div>
+        <div class="row">
+          <label for="controllerCSS" data-i18n-html="custom_css_label"></label>
+          <div class="css-editor">
+            <pre id="cssHighlight" class="css-highlight" aria-hidden="true"></pre>
+            <textarea
+              id="controllerCSS"
+              rows="8"
+              spellcheck="false"
+              data-i18n-placeholder="custom_css_placeholder"
+            ></textarea>
+          </div>
+          <div id="cssValidation" class="css-validation"></div>
+        </div>
+      </section>
+    </div>
+
+    <!-- status bar -->
+
+    <div id="status"></div>
+
+    <!-- ============ FAQ TAB ============ -->
+    <div id="panel-faq" style="display: none">
+      <section>
+        <div id="faq">
+          <ul class="faq-toc">
+            <li><a href="#faq-local" data-i18n="faq_toc_local"></a></li>
+            <li><a href="#faq-disable" data-i18n="faq_toc_disable"></a></li>
+            <li><a href="#faq-site-speed" data-i18n="faq_toc_site_speed"></a></li>
+            <li><a href="#faq-remember" data-i18n="faq_toc_remember"></a></li>
+            <li><a href="#faq-keys" data-i18n="faq_toc_keys"></a></li>
+            <li><a href="#faq-position" data-i18n="faq_toc_position"></a></li>
+            <li><a href="#faq-missing" data-i18n="faq_toc_missing"></a></li>
+            <li><a href="#faq-spa" data-i18n="faq_toc_spa"></a></li>
+            <li><a href="#faq-audio" data-i18n="faq_toc_audio"></a></li>
+          </ul>
+          <hr />
+          <div data-i18n-html="faq_block_local"></div>
+          <div data-i18n-html="faq_block_disable"></div>
+          <div data-i18n-html="faq_block_site_speed"></div>
+          <div data-i18n-html="faq_block_remember"></div>
+          <div data-i18n-html="faq_block_keys"></div>
+          <div data-i18n-html="faq_block_position"></div>
+          <div data-i18n-html="faq_block_missing"></div>
+          <div data-i18n-html="faq_block_spa"></div>
+          <div data-i18n-html="faq_block_audio"></div>
+        </div>
+        <div class="row">
+          <button id="about" class="secondary" data-i18n="about_btn"></button>
+          <button id="feedback" class="secondary" data-i18n="feedback_btn"></button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

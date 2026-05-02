@@ -1,0 +1,464 @@
+{
+  "ext_name": {
+    "message": "Video Speed Controller Plus"
+  },
+  "ext_description": {
+    "message": "基于 Video Speed Controller 理念：使用快捷键控制 HTML5 音视频速度；Plus 额外支持控制器文字/背景配色、字体、透明度、界面主题与多语言。"
+  },
+  "options_page_title": {
+    "message": "Video Speed Controller Plus：选项"
+  },
+  "popup_page_title": {
+    "message": "Video Speed Controller Plus"
+  },
+  "tab_settings": {
+    "message": "设置"
+  },
+  "tab_advanced": {
+    "message": "高级"
+  },
+  "tab_faq": {
+    "message": "常见问题"
+  },
+  "btn_save": {
+    "message": "保存"
+  },
+  "btn_import": {
+    "message": "导入"
+  },
+  "btn_export": {
+    "message": "导出"
+  },
+  "btn_restore": {
+    "message": "恢复默认"
+  },
+  "btn_default": {
+    "message": "默认"
+  },
+  "btn_reset": {
+    "message": "重置"
+  },
+  "aria_more_actions": {
+    "message": "更多操作"
+  },
+  "shortcuts_heading": {
+    "message": "快捷键"
+  },
+  "preferences_heading": {
+    "message": "偏好设置"
+  },
+  "add_new": {
+    "message": "新增"
+  },
+  "prefs_audio_label": {
+    "message": "支持音频<br /><em>在音频元素上显示速度控件。</em>"
+  },
+  "prefs_remember_label": {
+    "message": "记住播放速度<br /><em>保存上次使用的速度并自动应用到新视频。</em>"
+  },
+  "prefs_start_hidden_label": {
+    "message": "默认隐藏控制器<br /><em>在使用快捷键切换前保持隐藏。</em>"
+  },
+  "prefs_exclusive_label": {
+    "message": "独占键盘快捷键<br /><em>在可能的情况下阻止网站同时处理 VSC 快捷键。</em>"
+  },
+  "appearance_heading": {
+    "message": "外观"
+  },
+  "appearance_color_scheme_label": {
+    "message": "配色主题<br /><em>跟随系统、强制浅色或强制深色界面。</em>"
+  },
+  "appearance_accent_label": {
+    "message": "强调色<br /><em>应用于弹出窗口、选项页、高亮与焦点环。</em>"
+  },
+  "theme_system": {
+    "message": "跟随系统"
+  },
+  "theme_light": {
+    "message": "浅色"
+  },
+  "theme_dark": {
+    "message": "深色"
+  },
+  "accent_violet": {
+    "message": "紫"
+  },
+  "accent_blue": {
+    "message": "蓝"
+  },
+  "accent_teal": {
+    "message": "青绿"
+  },
+  "accent_green": {
+    "message": "绿"
+  },
+  "accent_rose": {
+    "message": "玫瑰"
+  },
+  "accent_amber": {
+    "message": "琥珀"
+  },
+  "controller_opacity_label": {
+    "message": "控制器不透明度<br /><em>0 = 完全透明，1 = 不透明。默认：0.3</em>"
+  },
+  "controller_button_size_label": {
+    "message": "控制器按钮大小<br /><em>速度与按钮的字体像素大小。默认：14</em>"
+  },
+  "slider_transparent": {
+    "message": "透明"
+  },
+  "slider_opaque": {
+    "message": "不透明"
+  },
+  "aria_controller_opacity": {
+    "message": "控制器不透明度"
+  },
+  "aria_controller_button_size": {
+    "message": "控制器按钮大小（像素）"
+  },
+  "preview_heading_label": {
+    "message": "大致预览<br /><em>在棋盘背景上的示意（透明度）。随上方滑块实时更新；未保存的空值使用默认（0.3 / 14px）。</em>"
+  },
+  "speed_text_color_label": {
+    "message": "速度数字颜色<br /><em>页内控制器上播放速率数字的颜色。十六进制或 CSS 颜色；留空为默认白色。可用色谱快速选取。</em>"
+  },
+  "panel_bg_label": {
+    "message": "控制器背景<br /><em>整条控制栏（速度数字与控制按钮）的背景色。速度区域透明，因此该颜色显示在数字后方。留空为默认黑色。可用文本或色谱填写 hex。</em>"
+  },
+  "spectrum_title": {
+    "message": "色谱"
+  },
+  "aria_spectrum_speed_text": {
+    "message": "速度文字色谱"
+  },
+  "aria_spectrum_panel_bg": {
+    "message": "控制器背景色谱"
+  },
+  "controller_font_label": {
+    "message": "控制器字体族<br /><em>页内控制器整体（速度 + 按钮）的字体栈。在下方选择预设（Aa 预览）或输入自定义逗号分隔列表。按本机已安装字体名依次回退。留空使用内置默认。</em>"
+  },
+  "placeholder_font_stack": {
+    "message": "Inter, system-ui, sans-serif"
+  },
+  "aria_font_presets": {
+    "message": "字体预设"
+  },
+  "font_tuning_title": {
+    "message": "字重与宽度"
+  },
+  "font_tuning_desc": {
+    "message": "滑块作用于页面中的整个控制器。使用 CSS <code>font-weight</code>（100–900）与 <code>font-stretch</code> 百分比（50%–200%）。保持默认（重置）可保留扩展内置外观。导入的设置若仍为关键字（如 bold），移动字重滑块前会显示提示。"
+  },
+  "font_weight_block": {
+    "message": "字重"
+  },
+  "font_width_block": {
+    "message": "宽度"
+  },
+  "slider_light": {
+    "message": "细"
+  },
+  "slider_bold": {
+    "message": "粗"
+  },
+  "slider_condensed": {
+    "message": "窄"
+  },
+  "slider_wide": {
+    "message": "宽"
+  },
+  "aria_font_weight": {
+    "message": "字重"
+  },
+  "aria_font_width": {
+    "message": "字体拉伸百分比"
+  },
+  "meter_weight_title": {
+    "message": "笔画由细（上）到粗（下）"
+  },
+  "meter_width_title": {
+    "message": "宽度由窄（上）到宽（下）"
+  },
+  "log_level_label": {
+    "message": "控制台日志级别<br /><em>在浏览器控制台中的详细程度</em>"
+  },
+  "log_none": {
+    "message": "无"
+  },
+  "log_error": {
+    "message": "错误"
+  },
+  "log_warning": {
+    "message": "警告"
+  },
+  "log_info": {
+    "message": "信息"
+  },
+  "log_debug": {
+    "message": "调试"
+  },
+  "log_verbose": {
+    "message": "详细"
+  },
+  "site_rules_label": {
+    "message": "站点规则<br /><em>按站点覆盖。使用域名或 <a href=\"https://www.regexpal.com/\">正则</a>（例如 <code>/\\.edu$/i</code>）。勾选“禁用”可在该站关闭扩展。填写速度可覆盖默认。</em>"
+  },
+  "site_rules_col_pattern": {
+    "message": "模式"
+  },
+  "site_rules_col_disable": {
+    "message": "禁用"
+  },
+  "site_rules_col_speed": {
+    "message": "速度"
+  },
+  "add_site_rule": {
+    "message": "添加站点规则"
+  },
+  "custom_css_label": {
+    "message": "自定义 CSS<br /><em>与内置样式一起注入的额外规则。用于覆盖位置或站点微调。</em>"
+  },
+  "custom_css_placeholder": {
+    "message": "/* Global override */\nvsc-controller { top: 50px !important; }\n\n/* Domain-specific */\n:root[style*='--vsc-domain: &quot;example.com&quot;'] vsc-controller {\n  display: none !important;\n}"
+  },
+  "about_btn": {
+    "message": "关于 Video Speed Controller Plus"
+  },
+  "feedback_btn": {
+    "message": "发送反馈"
+  },
+  "shortcut_slower": {
+    "message": "减速"
+  },
+  "shortcut_faster": {
+    "message": "加速"
+  },
+  "shortcut_rewind": {
+    "message": "倒带"
+  },
+  "shortcut_advance": {
+    "message": "快进"
+  },
+  "shortcut_reset": {
+    "message": "重置速度"
+  },
+  "shortcut_fast": {
+    "message": "偏好速度"
+  },
+  "shortcut_muted": {
+    "message": "静音"
+  },
+  "shortcut_softer": {
+    "message": "降低音量"
+  },
+  "shortcut_louder": {
+    "message": "提高音量"
+  },
+  "shortcut_pause": {
+    "message": "暂停"
+  },
+  "shortcut_mark": {
+    "message": "设置标记"
+  },
+  "shortcut_jump": {
+    "message": "跳到标记"
+  },
+  "shortcut_display": {
+    "message": "显示/隐藏控制器"
+  },
+  "ph_press_key": {
+    "message": "按下按键"
+  },
+  "ph_value_numeric": {
+    "message": "数值（0.10）"
+  },
+  "ph_site_pattern": {
+    "message": "youtube.com 或 /regex/"
+  },
+  "ph_speed_global": {
+    "message": "（全局）"
+  },
+  "preset_title_builtin": {
+    "message": "内置字体（自定义框留空）"
+  },
+  "warn_altgr": {
+    "message": "某些键盘布局下可能与 AltGr 输入冲突。"
+  },
+  "warn_meta": {
+    "message": "某些 Cmd/Meta 组合可能被操作系统拦截。"
+  },
+  "err_regex_invalid": {
+    "message": "错误：站点规则正则无效：“$1”。无法保存。"
+  },
+  "err_speed_range": {
+    "message": "错误：“$1” 的速度必须在 $2 与 $3 之间。"
+  },
+  "err_css_syntax": {
+    "message": "错误：控制器 CSS 存在语法错误，请先修正再保存。"
+  },
+  "err_css_size": {
+    "message": "错误：控制器 CSS 超过 8KB 存储上限（$1KB）。请减小体积。"
+  },
+  "err_save_storage": {
+    "message": "错误：无法保存到存储"
+  },
+  "err_save_generic": {
+    "message": "保存选项时出错：$1"
+  },
+  "err_load_options": {
+    "message": "加载选项时出错：$1"
+  },
+  "err_export": {
+    "message": "导出设置时出错：$1"
+  },
+  "err_import": {
+    "message": "导入失败：$1"
+  },
+  "err_restore": {
+    "message": "恢复默认时出错：$1"
+  },
+  "status_restoring": {
+    "message": "正在恢复默认…"
+  },
+  "status_restored": {
+    "message": "已恢复默认选项"
+  },
+  "status_exported": {
+    "message": "已导出设置"
+  },
+  "status_imported": {
+    "message": "已成功导入设置"
+  },
+  "css_no_rules": {
+    "message": "未解析出 CSS 规则 — 请检查语法。"
+  },
+  "css_syntax_err": {
+    "message": "语法错误：$1"
+  },
+  "css_rules_warn": {
+    "message": "已解析 $1 条规则，丢弃 $2 条：$3"
+  },
+  "popup_toggle_disable": {
+    "message": "禁用扩展"
+  },
+  "popup_toggle_enable": {
+    "message": "启用扩展"
+  },
+  "popup_settings": {
+    "message": "设置"
+  },
+  "popup_status_enabled": {
+    "message": "已启用。请刷新页面。"
+  },
+  "popup_status_disabled": {
+    "message": "已禁用。请刷新页面。"
+  },
+  "appearance_meta_opacity_default": {
+    "message": "不透明度 $1（保存前默认 0.3）"
+  },
+  "appearance_meta_opacity_saved": {
+    "message": "不透明度 $1"
+  },
+  "appearance_meta_size_default": {
+    "message": "文字 $1px（保存前默认 14）"
+  },
+  "appearance_meta_size_saved": {
+    "message": "文字 $1px"
+  },
+  "font_cap_weight_live_default": {
+    "message": "实时预览 $1 — 移动并保存前使用内置默认"
+  },
+  "font_cap_weight_stored": {
+    "message": "已保存 font-weight：$1"
+  },
+  "font_cap_weight_keyword": {
+    "message": "已保存关键字粗细（滑块预览 $1）"
+  },
+  "font_cap_stretch_live_default": {
+    "message": "实时预览 $1% — 移动并保存前使用内置默认"
+  },
+  "font_cap_stretch_stored": {
+    "message": "已保存 font-stretch：$1%"
+  },
+  "font_cap_stretch_keyword": {
+    "message": "已保存关键字拉伸 — 滑块预览 $1%"
+  },
+  "font_hint_saved": {
+    "message": " （已保存：$1）"
+  },
+  "remove_row_aria": {
+    "message": "删除此行"
+  },
+  "font_preset_default": {
+    "message": "默认"
+  },
+  "font_preset_gothic": {
+    "message": "黑体 / 无衬线"
+  },
+  "font_preset_mincho": {
+    "message": "明朝 / 衬线"
+  },
+  "font_preset_system": {
+    "message": "系统界面"
+  },
+  "font_preset_mono": {
+    "message": "等宽"
+  },
+  "font_preset_latin_sans": {
+    "message": "拉丁 / 界面无衬线"
+  },
+  "faq_toc_local": {
+    "message": "本地文件 / 无痕模式"
+  },
+  "faq_toc_disable": {
+    "message": "在网站上禁用"
+  },
+  "faq_toc_site_speed": {
+    "message": "按站点默认速度"
+  },
+  "faq_toc_remember": {
+    "message": "记住速度"
+  },
+  "faq_toc_keys": {
+    "message": "快捷键冲突"
+  },
+  "faq_toc_position": {
+    "message": "控制器位置"
+  },
+  "faq_toc_missing": {
+    "message": "控制器不显示"
+  },
+  "faq_toc_spa": {
+    "message": "导航时速度重置"
+  },
+  "faq_toc_audio": {
+    "message": "音频支持"
+  },
+  "faq_block_local": {
+    "message": "<h4 id=\"faq-local\">本地视频或无痕模式下不显示速度控件？</h4>\n<p>若要播放本地媒体（例如“文件 &gt; 打开文件”）或在无痕模式使用，需要手动为扩展授予额外权限。</p>\n<ul>\n<li>在新标签页打开 <code>chrome://extensions</code></li>\n<li>在列表中找到 “Video Speed Controller Plus”，启用“允许访问文件网址”和/或“在无痕模式下允许”。</li>\n</ul>"
+  },
+  "faq_block_disable": {
+    "message": "<h4 id=\"faq-disable\">如何在特定网站上禁用扩展？</h4>\n<p>打开<strong>高级 &gt; 站点规则</strong>，使用该站点域名（例如 <code>example.com</code>）添加规则并勾选<strong>禁用</strong>。扩展将不会在该站点注入。也可用正则（如 <code>/\\.edu$/i</code>）匹配多个域名。</p>"
+  },
+  "faq_block_site_speed": {
+    "message": "<h4 id=\"faq-site-speed\">如何为特定站点设置默认速度？</h4>\n<p>在<strong>高级 &gt; 站点规则</strong>中添加域名，并在<strong>速度</strong>栏填入所需值（例如 <code>2</code> 表示 2 倍速）。不要勾选禁用。该站点的新视频将以此速度开始。</p>"
+  },
+  "faq_block_remember": {
+    "message": "<h4 id=\"faq-remember\">“记住播放速度”与站点规则如何配合？</h4>\n<p>当 <code>rememberSpeed</code> 为<strong>关闭</strong>（默认）时，每次加载页面从 1 倍速开始——若有匹配的站点规则则用规则速度。会话内更改会应用到新视频，但刷新后会丢失。</p>\n<p>当 <code>rememberSpeed</code> 为<strong>开启</strong>时，上次设置的速度会保存并跨会话保留，且<strong>优先于</strong>站点规则默认值。若要让站点规则再次生效，请关闭 <code>rememberSpeed</code> 或手动重置为 1 倍速。</p>"
+  },
+  "faq_block_keys": {
+    "message": "<h4 id=\"faq-keys\">网站快捷键与我的冲突怎么办？</h4>\n<p>可选做法：</p>\n<ul>\n<li><strong>添加修饰键：</strong>在设置 &gt; 快捷键中为快捷键加上 <code>Shift</code>、<code>Ctrl</code> 或 <code>Alt</code>。</li>\n<li><strong>改用闲置按键：</strong>换成网站未使用的键。</li>\n<li><strong>启用独占模式：</strong>在偏好设置中开启“独占键盘快捷键”。</li>\n</ul>"
+  },
+  "faq_block_position": {
+    "message": "<h4 id=\"faq-position\">控制器与网站控件重叠如何移动？</h4>\n<p>前往<strong>高级 &gt; 自定义 CSS</strong>，使用 <code>--vsc-domain</code> 针对 <code>vsc-controller</code> 书写域名规则。示例：</p>\n<p><code>:root[style*='--vsc-domain: &quot;example.com&quot;'] vsc-controller { position: relative; top: 60px; }</code></p>\n<p>也可在页面上拖动控制器。可参考内置的 YouTube、Netflix 等规则。</p>"
+  },
+  "faq_block_missing": {
+    "message": "<h4 id=\"faq-missing\">网站上不出现控制器的原因</h4>\n<p>常见原因：</p>\n<ul>\n<li>站点规则中勾选了禁用——删除或取消勾选。</li>\n<li>站点使用 Flash 或非 HTML5 播放器——扩展仅支持原生 <code>&lt;video&gt;</code> 与 <code>&lt;audio&gt;</code>。</li>\n<li>启用了<code>默认隐藏控制器</code>——按下显示切换快捷键（默认 <code>V</code>）。</li>\n</ul>"
+  },
+  "faq_block_spa": {
+    "message": "<h4 id=\"faq-spa\">在 YouTube 等单页应用导航时速度被重置？</h4>\n<p>SPA 不会整页刷新，但播放器可能重新初始化。扩展会自动从会话内数值恢复速度。若仍会重置，请在偏好设置中启用 <code>rememberSpeed</code>。</p>"
+  },
+  "faq_block_audio": {
+    "message": "<h4 id=\"faq-audio\">是否支持音频而不只是视频？</h4>\n<p>支持。当偏好设置中的<code>支持音频</code>开启（默认开启）时，控制器也会出现在 <code>&lt;audio&gt;</code> 上，速度与快捷键行为一致。</p>"
+  }
+}

@@ -1,0 +1,9 @@
+.DS_Store
+**/.DS_Store
+*.pem
+.env
+.env.*
+node_modules/
+
+# Old unpacked path (canonical tree is video_speed_controller_plus-0.0.1/)
+nffaoalbilbmmfgbnbgppjihopabppdk/

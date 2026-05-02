@@ -1,0 +1,464 @@
+{
+  "ext_name": {
+    "message": "Video Speed Controller Plus"
+  },
+  "ext_description": {
+    "message": "Video Speed Controller をベースにした派生版です。ショートカットで HTML5 の音声／動画の速度変更・早送り／巻き戻しに加え、コントローラーの文字色・背景・フォント・不透明度・UI テーマ・多言語表示などを調整できます。"
+  },
+  "options_page_title": {
+    "message": "Video Speed Controller Plus: 設定"
+  },
+  "popup_page_title": {
+    "message": "Video Speed Controller Plus"
+  },
+  "tab_settings": {
+    "message": "設定"
+  },
+  "tab_advanced": {
+    "message": "詳細"
+  },
+  "tab_faq": {
+    "message": "ヘルプ"
+  },
+  "btn_save": {
+    "message": "保存"
+  },
+  "btn_import": {
+    "message": "読み込み"
+  },
+  "btn_export": {
+    "message": "書き出し"
+  },
+  "btn_restore": {
+    "message": "初期化"
+  },
+  "btn_default": {
+    "message": "既定"
+  },
+  "btn_reset": {
+    "message": "リセット"
+  },
+  "aria_more_actions": {
+    "message": "その他の操作"
+  },
+  "shortcuts_heading": {
+    "message": "ショートカット"
+  },
+  "preferences_heading": {
+    "message": "環境設定"
+  },
+  "add_new": {
+    "message": "追加"
+  },
+  "prefs_audio_label": {
+    "message": "音声に対応<br /><em>音声要素にも速度コントローラーを表示します。</em>"
+  },
+  "prefs_remember_label": {
+    "message": "再生速度を記憶<br /><em>最後に使った速度を保存し、新しい動画に自動適用します。</em>"
+  },
+  "prefs_start_hidden_label": {
+    "message": "既定でコントローラーを非表示<br /><em>ショートカットで表示するまで非表示のままにします。</em>"
+  },
+  "prefs_exclusive_label": {
+    "message": "キーを強制的に取る<br /><em>可能な場合、サイト側が同じキーを処理しないようにします。</em>"
+  },
+  "appearance_heading": {
+    "message": "外観"
+  },
+  "appearance_color_scheme_label": {
+    "message": "配色テーマ<br /><em>システム設定に合わせる／ライト固定／ダーク固定。</em>"
+  },
+  "appearance_accent_label": {
+    "message": "アクセント色<br /><em>ポップアップ・設定・ハイライト・フォーカスリングに適用されます。</em>"
+  },
+  "theme_system": {
+    "message": "システムに合わせる"
+  },
+  "theme_light": {
+    "message": "ライト"
+  },
+  "theme_dark": {
+    "message": "ダーク"
+  },
+  "accent_violet": {
+    "message": "バイオレット"
+  },
+  "accent_blue": {
+    "message": "ブルー"
+  },
+  "accent_teal": {
+    "message": "ティール"
+  },
+  "accent_green": {
+    "message": "グリーン"
+  },
+  "accent_rose": {
+    "message": "ローズ"
+  },
+  "accent_amber": {
+    "message": "アンバー"
+  },
+  "controller_opacity_label": {
+    "message": "コントローラーの不透明度<br /><em>0＝完全な透明、1＝不透明。既定: 0.3</em>"
+  },
+  "controller_button_size_label": {
+    "message": "ボタン／文字サイズ<br /><em>速度表示とボタンのフォントサイズ（px）。既定: 14</em>"
+  },
+  "slider_transparent": {
+    "message": "透明"
+  },
+  "slider_opaque": {
+    "message": "不透明"
+  },
+  "aria_controller_opacity": {
+    "message": "コントローラーの不透明度"
+  },
+  "aria_controller_button_size": {
+    "message": "コントローラーのボタンサイズ（ピクセル）"
+  },
+  "preview_heading_label": {
+    "message": "おおよそのプレビュー<br /><em>チェック背景上の簡易表示です。上のスライダーに連動します。未保存の空値は既定（0.3／14px）を使います。</em>"
+  },
+  "speed_text_color_label": {
+    "message": "速度表示の文字色<br /><em>ページ内コントローラーの再生速度数字の色です。16進または CSS 色。空欄で既定の白。スペクトラムで簡単に選べます。</em>"
+  },
+  "panel_bg_label": {
+    "message": "コントローラーの背景<br /><em>バー全体（速度数字と巻き戻し・低速／高速・進むなど）の背景色です。速度エリアは透明のため、この色が数字の下に見えます。空欄で既定の黒。テキストまたはスペクトラムで指定。</em>"
+  },
+  "spectrum_title": {
+    "message": "色スペクトラム"
+  },
+  "aria_spectrum_speed_text": {
+    "message": "速度文字色のスペクトラム"
+  },
+  "aria_spectrum_panel_bg": {
+    "message": "コントローラー背景のスペクトラム"
+  },
+  "controller_font_label": {
+    "message": "コントローラーのフォント<br /><em>ページ内コントローラー全体（速度＋ボタン）のフォントスタックです。下のプリセット（Aa）を選ぶか、カスタムをカンマ区切りで入力。PC に入っているファミリー名を順に試します。空欄で拡張機能の既定。</em>"
+  },
+  "placeholder_font_stack": {
+    "message": "Inter, system-ui, sans-serif"
+  },
+  "aria_font_presets": {
+    "message": "フォントのプリセット"
+  },
+  "font_tuning_title": {
+    "message": "フォントの太さと幅"
+  },
+  "font_tuning_desc": {
+    "message": "スライダーはページ内コントローラー全体に適用されます。<code>font-weight</code>（100〜900）と <code>font-stretch</code>（50%〜200%）です。既定（リセット）のままなら拡張機能の組み込み見た目を維持します。インポートでキーワード（例: bold）が残っている場合は、太さスライダーを動かすまで注意メモが出ます。"
+  },
+  "font_weight_block": {
+    "message": "太さ"
+  },
+  "font_width_block": {
+    "message": "幅"
+  },
+  "slider_light": {
+    "message": "細い"
+  },
+  "slider_bold": {
+    "message": "太い"
+  },
+  "slider_condensed": {
+    "message": "狭い"
+  },
+  "slider_wide": {
+    "message": "広い"
+  },
+  "aria_font_weight": {
+    "message": "フォントの太さ"
+  },
+  "aria_font_width": {
+    "message": "フォントの幅（ストレッチ％）"
+  },
+  "meter_weight_title": {
+    "message": "上から下へ細い→太いストローク"
+  },
+  "meter_width_title": {
+    "message": "上から下へ狭い→広いストローク"
+  },
+  "log_level_label": {
+    "message": "コンソールのログレベル<br /><em>ブラウザーの開発者コンソールでの詳しさ</em>"
+  },
+  "log_none": {
+    "message": "なし"
+  },
+  "log_error": {
+    "message": "エラー"
+  },
+  "log_warning": {
+    "message": "警告"
+  },
+  "log_info": {
+    "message": "情報"
+  },
+  "log_debug": {
+    "message": "デバッグ"
+  },
+  "log_verbose": {
+    "message": "詳細"
+  },
+  "site_rules_label": {
+    "message": "サイト別ルール<br /><em>サイトごとの上書き。ドメインか <a href=\"https://www.regexpal.com/\">正規表現</a>（例: <code>/\\.edu$/i</code>）。「無効」をオンにするとそのサイトでは拡張をオフ。速度を指定すると既定を上書き。</em>"
+  },
+  "site_rules_col_pattern": {
+    "message": "パターン"
+  },
+  "site_rules_col_disable": {
+    "message": "無効"
+  },
+  "site_rules_col_speed": {
+    "message": "速度"
+  },
+  "add_site_rule": {
+    "message": "サイトルールを追加"
+  },
+  "custom_css_label": {
+    "message": "カスタム CSS<br /><em>組み込みスタイルに追加で注入されます。位置調整やサイト固有の調整に。</em>"
+  },
+  "custom_css_placeholder": {
+    "message": "/* Global override */\nvsc-controller { top: 50px !important; }\n\n/* Domain-specific */\n:root[style*='--vsc-domain: &quot;example.com&quot;'] vsc-controller {\n  display: none !important;\n}"
+  },
+  "about_btn": {
+    "message": "Video Speed Controller Plus について"
+  },
+  "feedback_btn": {
+    "message": "フィードバックを送る"
+  },
+  "shortcut_slower": {
+    "message": "速度を下げる"
+  },
+  "shortcut_faster": {
+    "message": "速度を上げる"
+  },
+  "shortcut_rewind": {
+    "message": "巻き戻し"
+  },
+  "shortcut_advance": {
+    "message": "早送り"
+  },
+  "shortcut_reset": {
+    "message": "速度リセット"
+  },
+  "shortcut_fast": {
+    "message": "お気に入り速度"
+  },
+  "shortcut_muted": {
+    "message": "ミュート"
+  },
+  "shortcut_softer": {
+    "message": "音量を下げる"
+  },
+  "shortcut_louder": {
+    "message": "音量を上げる"
+  },
+  "shortcut_pause": {
+    "message": "一時停止"
+  },
+  "shortcut_mark": {
+    "message": "マーカー設定"
+  },
+  "shortcut_jump": {
+    "message": "マーカーへジャンプ"
+  },
+  "shortcut_display": {
+    "message": "コントローラー表示の切替"
+  },
+  "ph_press_key": {
+    "message": "キーを押す"
+  },
+  "ph_value_numeric": {
+    "message": "値（0.10）"
+  },
+  "ph_site_pattern": {
+    "message": "youtube.com または /regex/"
+  },
+  "ph_speed_global": {
+    "message": "（グローバル）"
+  },
+  "preset_title_builtin": {
+    "message": "組み込みフォント（カスタム欄は空のまま）"
+  },
+  "warn_altgr": {
+    "message": "一部のキーボードでは AltGr 入力と競合する場合があります。"
+  },
+  "warn_meta": {
+    "message": "一部の Cmd/Meta の組み合わせは OS に取られることがあります。"
+  },
+  "err_regex_invalid": {
+    "message": "エラー: サイトルールの正規表現が無効です: 「$1」。保存できません。"
+  },
+  "err_speed_range": {
+    "message": "エラー: 「$1」の速度は $2 〜 $3 の範囲にしてください。"
+  },
+  "err_css_syntax": {
+    "message": "エラー: コントローラー CSS に構文エラーがあります。修正してから保存してください。"
+  },
+  "err_css_size": {
+    "message": "エラー: コントローラー CSS が 8KB の保存上限を超えています（$1KB）。サイズを減らしてください。"
+  },
+  "err_save_storage": {
+    "message": "エラー: ストレージへの保存に失敗しました"
+  },
+  "err_save_generic": {
+    "message": "オプション保存エラー: $1"
+  },
+  "err_load_options": {
+    "message": "オプション読み込みエラー: $1"
+  },
+  "err_export": {
+    "message": "書き出しエラー: $1"
+  },
+  "err_import": {
+    "message": "読み込みに失敗: $1"
+  },
+  "err_restore": {
+    "message": "初期化エラー: $1"
+  },
+  "status_restoring": {
+    "message": "初期状態に戻しています…"
+  },
+  "status_restored": {
+    "message": "既定に戻しました"
+  },
+  "status_exported": {
+    "message": "設定を書き出しました"
+  },
+  "status_imported": {
+    "message": "設定を読み込みました"
+  },
+  "css_no_rules": {
+    "message": "CSS ルールが解析されませんでした。構文を確認してください。"
+  },
+  "css_syntax_err": {
+    "message": "構文エラー: $1"
+  },
+  "css_rules_warn": {
+    "message": "$1 件のルールを解析、$2 件を破棄: $3"
+  },
+  "popup_toggle_disable": {
+    "message": "拡張機能を無効にする"
+  },
+  "popup_toggle_enable": {
+    "message": "拡張機能を有効にする"
+  },
+  "popup_settings": {
+    "message": "設定"
+  },
+  "popup_status_enabled": {
+    "message": "有効にしました。ページを再読み込みしてください。"
+  },
+  "popup_status_disabled": {
+    "message": "無効にしました。ページを再読み込みしてください。"
+  },
+  "appearance_meta_opacity_default": {
+    "message": "不透明度 $1（保存まで既定 0.3）"
+  },
+  "appearance_meta_opacity_saved": {
+    "message": "不透明度 $1"
+  },
+  "appearance_meta_size_default": {
+    "message": "文字 $1px（保存まで既定 14）"
+  },
+  "appearance_meta_size_saved": {
+    "message": "文字 $1px"
+  },
+  "font_cap_weight_live_default": {
+    "message": "ライブプレビュー $1 — スライダーを動かして保存するまで組み込み既定"
+  },
+  "font_cap_weight_stored": {
+    "message": "保存済み font-weight: $1"
+  },
+  "font_cap_weight_keyword": {
+    "message": "キーワードの太さを保存中（スライダープレビュー $1）"
+  },
+  "font_cap_stretch_live_default": {
+    "message": "ライブプレビュー $1% — スライダーを動かして保存するまで組み込み既定"
+  },
+  "font_cap_stretch_stored": {
+    "message": "保存済み font-stretch: $1%"
+  },
+  "font_cap_stretch_keyword": {
+    "message": "キーワードの幅を保存中 — スライダープレビュー $1%"
+  },
+  "font_hint_saved": {
+    "message": " （保存値: $1）"
+  },
+  "remove_row_aria": {
+    "message": "行を削除"
+  },
+  "font_preset_default": {
+    "message": "既定"
+  },
+  "font_preset_gothic": {
+    "message": "ゴシック"
+  },
+  "font_preset_mincho": {
+    "message": "明朝"
+  },
+  "font_preset_system": {
+    "message": "システム"
+  },
+  "font_preset_mono": {
+    "message": "等幅"
+  },
+  "font_preset_latin_sans": {
+    "message": "欧文サンセリフ"
+  },
+  "faq_toc_local": {
+    "message": "ローカルファイル／シークレット"
+  },
+  "faq_toc_disable": {
+    "message": "特定サイトで無効にする"
+  },
+  "faq_toc_site_speed": {
+    "message": "サイトごとの既定速度"
+  },
+  "faq_toc_remember": {
+    "message": "速度の記憶"
+  },
+  "faq_toc_keys": {
+    "message": "ショートカットの衝突"
+  },
+  "faq_toc_position": {
+    "message": "コントローラーの位置"
+  },
+  "faq_toc_missing": {
+    "message": "表示されないとき"
+  },
+  "faq_toc_spa": {
+    "message": "移動で速度が戻る"
+  },
+  "faq_toc_audio": {
+    "message": "音声への対応"
+  },
+  "faq_block_local": {
+    "message": "<h4 id=\"faq-local\">ローカル動画やシークレットでコントローラーが出ません</h4>\n<p>ローカルメディア（ファイルを開くなど）やシークレットで使うには、拡張機能に追加の許可を手動で付与してください。</p>\n<ul>\n<li>新しいタブで <code>chrome://extensions</code> を開く</li>\n<li>一覧から「Video Speed Controller Plus」を見つけ、「ファイルの URL へのアクセスを許可」および／または「シークレットモードで許可」をオンにする</li>\n</ul>"
+  },
+  "faq_block_disable": {
+    "message": "<h4 id=\"faq-disable\">特定のサイトだけ拡張を無効にするには？</h4>\n<p><strong>詳細 &gt; サイト別ルール</strong> に、そのサイトのドメイン（例: <code>example.com</code>）でルールを追加し、<strong>無効</strong>にチェックします。そのサイトでは注入されません。<code>/\\.edu$/i</code> のような正規表現で複数ドメインに合わせることもできます。</p>"
+  },
+  "faq_block_site_speed": {
+    "message": "<h4 id=\"faq-site-speed\">サイトごとに既定の速度を設定するには？</h4>\n<p><strong>詳細 &gt; サイト別ルール</strong> でドメインを追加し、<strong>速度</strong>欄に希望の値（例: 2 で 2 倍速）を入力します。無効にチェックしないでください。そのサイトの新しい動画はその速度で開始します。</p>"
+  },
+  "faq_block_remember": {
+    "message": "<h4 id=\"faq-remember\">「再生速度を記憶」とサイトルールはどう関係しますか？</h4>\n<p><code>rememberSpeed</code> が<strong>オフ</strong>（既定）のときは、ページ読み込みごとに 1 倍速（または一致するサイトルールの速度）から始まります。セッション中に変えた速度は新しい動画にも当たりますが、再読み込みで忘れられます。</p>\n<p><code>rememberSpeed</code> が<strong>オン</strong>のときは、最後に設定した速度が保存されセッションをまたぎます。この保存値はサイトルールの既定より<strong>優先</strong>されます。サイトルールを優先したいときは <code>rememberSpeed</code> をオフにするか、手動で 1 倍に戻してください。</p>"
+  },
+  "faq_block_keys": {
+    "message": "<h4 id=\"faq-keys\">サイトのショートカットと衝突します</h4>\n<p>次のような方法があります。</p>\n<ul>\n<li><strong>修飾キーを付ける：</strong> 設定のショートカットで <code>Shift</code>・<code>Ctrl</code>・<code>Alt</code> を組み合わせ、サイトが拾わないキーにする。</li>\n<li><strong>別のキーに割り当てる：</strong> サイトが使っていないキーへ変更する。</li>\n<li><strong>排他モード：</strong> 環境設定で「キーを強制的に取る」をオンにして、サイト側の処理を抑止する。</li>\n</ul>"
+  },
+  "faq_block_position": {
+    "message": "<h4 id=\"faq-position\">コントローラーがサイトの UI と重なる</h4>\n<p><strong>詳細 &gt; カスタム CSS</strong> で、<code>--vsc-domain</code> を使って <code>vsc-controller</code> をサイトごとに調整します。例：</p>\n<p><code>:root[style*='--vsc-domain: &quot;example.com&quot;'] vsc-controller { position: relative; top: 60px; }</code></p>\n<p>ページ上でドラッグして位置を変えることもできます。YouTube や Netflix 向けのサンプル CSS も参考にしてください。</p>"
+  },
+  "faq_block_missing": {
+    "message": "<h4 id=\"faq-missing\">サイトでコントローラーが表示されない</h4>\n<p>よくある原因：</p>\n<ul>\n<li><strong>サイト別ルール</strong>で無効になっている — 解除またはオフにする。</li>\n<li>Flash や非 HTML5 プレーヤー — 拡張はネイティブの <code>&lt;video&gt;</code> / <code>&lt;audio&gt;</code> のみ対応。</li>\n<li><code>既定でコントローラーを非表示</code>がオン — 表示切替ショートカット（既定 <code>V</code>）を押す。</li>\n</ul>"
+  },
+  "faq_block_spa": {
+    "message": "<h4 id=\"faq-spa\">YouTube などで移動すると速度が戻る</h4>\n<p>SPA ではページ全体は再読み込みされませんがプレーヤーが再初期化されることがあります。拡張はセッション内の値から速度を復元します。それでも戻る場合は環境設定で <code>rememberSpeed</code> をオンにしてください。</p>"
+  },
+  "faq_block_audio": {
+    "message": "<h4 id=\"faq-audio\">動画だけでなく音声にも使えますか？</h4>\n<p>はい。環境設定で<code>音声に対応</code>がオン（既定）なら、<code>&lt;audio&gt;</code> にもコントローラーが表示されます。速度操作とキーボードショートカットは同様に動きます。</p>"
+  }
+}

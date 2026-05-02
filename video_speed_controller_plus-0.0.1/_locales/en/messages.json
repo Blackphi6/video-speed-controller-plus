@@ -1,0 +1,464 @@
+{
+  "ext_name": {
+    "message": "Video Speed Controller Plus"
+  },
+  "ext_description": {
+    "message": "Fork of Video Speed Controller: keyboard shortcuts for HTML5 video/audio speed, plus customizable on-screen controller styling, themed popup/options, and locales (en, ja, zh_CN)."
+  },
+  "options_page_title": {
+    "message": "Video Speed Controller Plus: Options"
+  },
+  "popup_page_title": {
+    "message": "Video Speed Controller Plus"
+  },
+  "tab_settings": {
+    "message": "Settings"
+  },
+  "tab_advanced": {
+    "message": "Advanced"
+  },
+  "tab_faq": {
+    "message": "FAQ"
+  },
+  "btn_save": {
+    "message": "Save"
+  },
+  "btn_import": {
+    "message": "Import"
+  },
+  "btn_export": {
+    "message": "Export"
+  },
+  "btn_restore": {
+    "message": "Reset"
+  },
+  "btn_default": {
+    "message": "Default"
+  },
+  "btn_reset": {
+    "message": "Reset"
+  },
+  "aria_more_actions": {
+    "message": "More actions"
+  },
+  "shortcuts_heading": {
+    "message": "Shortcuts"
+  },
+  "preferences_heading": {
+    "message": "Preferences"
+  },
+  "add_new": {
+    "message": "Add New"
+  },
+  "prefs_audio_label": {
+    "message": "Audio support<br /><em>Show speed controls on audio elements.</em>"
+  },
+  "prefs_remember_label": {
+    "message": "Remember playback speed<br /><em>Store and auto-apply the last used speed to all new videos.</em>"
+  },
+  "prefs_start_hidden_label": {
+    "message": "Hide controller by default<br /><em>Controller stays hidden until toggled via shortcut.</em>"
+  },
+  "prefs_exclusive_label": {
+    "message": "Exclusive keyboard shortcuts<br /><em>When possible, prevent websites from also handling VSC shortcut keys.</em>"
+  },
+  "appearance_heading": {
+    "message": "Appearance"
+  },
+  "appearance_color_scheme_label": {
+    "message": "Color theme<br /><em>Use system setting, force light UI, or force dark UI.</em>"
+  },
+  "appearance_accent_label": {
+    "message": "Accent color<br /><em>Applied to popup, options, highlights, and focus rings.</em>"
+  },
+  "theme_system": {
+    "message": "Match system"
+  },
+  "theme_light": {
+    "message": "Light"
+  },
+  "theme_dark": {
+    "message": "Dark"
+  },
+  "accent_violet": {
+    "message": "Violet"
+  },
+  "accent_blue": {
+    "message": "Blue"
+  },
+  "accent_teal": {
+    "message": "Teal"
+  },
+  "accent_green": {
+    "message": "Green"
+  },
+  "accent_rose": {
+    "message": "Rose"
+  },
+  "accent_amber": {
+    "message": "Amber"
+  },
+  "controller_opacity_label": {
+    "message": "Controller opacity<br /><em>0 = fully transparent, 1 = fully opaque. Default: 0.3</em>"
+  },
+  "controller_button_size_label": {
+    "message": "Controller button size<br /><em>Font size in pixels for the speed display and buttons. Default: 14</em>"
+  },
+  "slider_transparent": {
+    "message": "Transparent"
+  },
+  "slider_opaque": {
+    "message": "Opaque"
+  },
+  "aria_controller_opacity": {
+    "message": "Controller opacity"
+  },
+  "aria_controller_button_size": {
+    "message": "Controller button size in pixels"
+  },
+  "preview_heading_label": {
+    "message": "Approximate preview<br /><em>Rough mock on a checker pattern (transparency). Updates live from the sliders above; empty saved values use defaults (0.3 / 14px).</em>"
+  },
+  "speed_text_color_label": {
+    "message": "Speed indicator text color<br /><em>Color of the playback-rate number on the in-page controller. Hex or CSS color; leave empty for default white. Use the spectrum for quick hex picks.</em>"
+  },
+  "panel_bg_label": {
+    "message": "Controller background<br /><em>Background color for the whole on-page control bar: the speed number and the control buttons (rewind, slower / faster, advance). The speed area is transparent so this color shows through behind the digits. Empty = default black. Use the text field or spectrum for hex.</em>"
+  },
+  "spectrum_title": {
+    "message": "Color spectrum"
+  },
+  "aria_spectrum_speed_text": {
+    "message": "Spectrum for speed text color"
+  },
+  "aria_spectrum_panel_bg": {
+    "message": "Spectrum for controller background"
+  },
+  "controller_font_label": {
+    "message": "Controller font family<br /><em>Font stack for the whole on-page controller (speed + buttons). Pick a preset below (Aa preview) or type a custom comma-separated stack. Use font family names as installed on your PC; the browser picks the first available face. Leave empty for the built-in defaults.</em>"
+  },
+  "placeholder_font_stack": {
+    "message": "Inter, system-ui, sans-serif"
+  },
+  "aria_font_presets": {
+    "message": "Font presets"
+  },
+  "font_tuning_title": {
+    "message": "Font weight and width"
+  },
+  "font_tuning_desc": {
+    "message": "Sliders apply to the whole controller in the page. Uses CSS <code>font-weight</code> (100 - 900) and <code>font-stretch</code> as a percentage (50% - 200%). Leave defaults (Reset) to keep the extension&apos;s built-in look. Imported settings may still use keywords (e.g. bold); those show a note until you move the weight slider."
+  },
+  "font_weight_block": {
+    "message": "Weight"
+  },
+  "font_width_block": {
+    "message": "Width"
+  },
+  "slider_light": {
+    "message": "Light"
+  },
+  "slider_bold": {
+    "message": "Bold"
+  },
+  "slider_condensed": {
+    "message": "Condensed"
+  },
+  "slider_wide": {
+    "message": "Wide"
+  },
+  "aria_font_weight": {
+    "message": "Font weight"
+  },
+  "aria_font_width": {
+    "message": "Font width stretch percent"
+  },
+  "meter_weight_title": {
+    "message": "Stroke weight from light (top) to bold (bottom)"
+  },
+  "meter_width_title": {
+    "message": "Width from condensed (top) to expanded (bottom)"
+  },
+  "log_level_label": {
+    "message": "Console Log Level<br /><em>Set verbosity in the browser console</em>"
+  },
+  "log_none": {
+    "message": "None"
+  },
+  "log_error": {
+    "message": "Error"
+  },
+  "log_warning": {
+    "message": "Warning"
+  },
+  "log_info": {
+    "message": "Info"
+  },
+  "log_debug": {
+    "message": "Debug"
+  },
+  "log_verbose": {
+    "message": "Verbose"
+  },
+  "site_rules_label": {
+    "message": "Site rules<br /><em>Per-site overrides. Use a domain or <a href=\"https://www.regexpal.com/\">regex</a> (e.g. <code>/\\.edu$/i</code>). Check &quot;Disable&quot; to turn off the extension on that site. Set a speed to override the default.</em>"
+  },
+  "site_rules_col_pattern": {
+    "message": "Pattern"
+  },
+  "site_rules_col_disable": {
+    "message": "Disable"
+  },
+  "site_rules_col_speed": {
+    "message": "Speed"
+  },
+  "add_site_rule": {
+    "message": "Add Site Rule"
+  },
+  "custom_css_label": {
+    "message": "Custom CSS<br /><em>Additional rules injected alongside the built-in defaults. Use to override positioning or add site-specific tweaks.</em>"
+  },
+  "custom_css_placeholder": {
+    "message": "/* Global override */\nvsc-controller { top: 50px !important; }\n\n/* Domain-specific */\n:root[style*='--vsc-domain: &quot;example.com&quot;'] vsc-controller {\n  display: none !important;\n}"
+  },
+  "about_btn": {
+    "message": "About Video Speed Controller Plus"
+  },
+  "feedback_btn": {
+    "message": "Send Feedback"
+  },
+  "shortcut_slower": {
+    "message": "Decrease speed"
+  },
+  "shortcut_faster": {
+    "message": "Increase speed"
+  },
+  "shortcut_rewind": {
+    "message": "Rewind"
+  },
+  "shortcut_advance": {
+    "message": "Advance"
+  },
+  "shortcut_reset": {
+    "message": "Reset speed"
+  },
+  "shortcut_fast": {
+    "message": "Preferred speed"
+  },
+  "shortcut_muted": {
+    "message": "Mute"
+  },
+  "shortcut_softer": {
+    "message": "Decrease volume"
+  },
+  "shortcut_louder": {
+    "message": "Increase volume"
+  },
+  "shortcut_pause": {
+    "message": "Pause"
+  },
+  "shortcut_mark": {
+    "message": "Set marker"
+  },
+  "shortcut_jump": {
+    "message": "Jump to marker"
+  },
+  "shortcut_display": {
+    "message": "Show/hide controller"
+  },
+  "ph_press_key": {
+    "message": "press a key"
+  },
+  "ph_value_numeric": {
+    "message": "value (0.10)"
+  },
+  "ph_site_pattern": {
+    "message": "youtube.com or /regex/"
+  },
+  "ph_speed_global": {
+    "message": "(global)"
+  },
+  "preset_title_builtin": {
+    "message": "Built-in fonts (leave custom field empty)"
+  },
+  "warn_altgr": {
+    "message": "This combination may conflict with AltGr input on some keyboard layouts."
+  },
+  "warn_meta": {
+    "message": "Some Cmd/Meta combinations are intercepted by the OS and may not work."
+  },
+  "err_regex_invalid": {
+    "message": "Error: Invalid site rule regex: \"$1\". Unable to save."
+  },
+  "err_speed_range": {
+    "message": "Error: Speed for \"$1\" must be between $2 and $3."
+  },
+  "err_css_syntax": {
+    "message": "Error: Controller CSS has syntax errors. Fix them before saving."
+  },
+  "err_css_size": {
+    "message": "Error: Controller CSS exceeds 8KB storage limit ($1KB). Reduce CSS size."
+  },
+  "err_save_storage": {
+    "message": "Error: failed to save options to storage"
+  },
+  "err_save_generic": {
+    "message": "Error saving options: $1"
+  },
+  "err_load_options": {
+    "message": "Error loading options: $1"
+  },
+  "err_export": {
+    "message": "Error exporting settings: $1"
+  },
+  "err_import": {
+    "message": "Import failed: $1"
+  },
+  "err_restore": {
+    "message": "Error restoring defaults: $1"
+  },
+  "status_restoring": {
+    "message": "Restoring defaults..."
+  },
+  "status_restored": {
+    "message": "Default options restored"
+  },
+  "status_exported": {
+    "message": "Settings exported"
+  },
+  "status_imported": {
+    "message": "Settings imported successfully"
+  },
+  "css_no_rules": {
+    "message": "No CSS rules parsed — check for syntax errors."
+  },
+  "css_syntax_err": {
+    "message": "Syntax error: $1"
+  },
+  "css_rules_warn": {
+    "message": "$1 rule(s) parsed, $2 dropped: $3"
+  },
+  "popup_toggle_disable": {
+    "message": "Disable extension"
+  },
+  "popup_toggle_enable": {
+    "message": "Enable extension"
+  },
+  "popup_settings": {
+    "message": "Settings"
+  },
+  "popup_status_enabled": {
+    "message": "Enabled. Reload page."
+  },
+  "popup_status_disabled": {
+    "message": "Disabled. Reload page."
+  },
+  "appearance_meta_opacity_default": {
+    "message": "opacity $1 (default 0.3 until saved)"
+  },
+  "appearance_meta_opacity_saved": {
+    "message": "opacity $1"
+  },
+  "appearance_meta_size_default": {
+    "message": "$1px text (default 14 until saved)"
+  },
+  "appearance_meta_size_saved": {
+    "message": "$1px text"
+  },
+  "font_cap_weight_live_default": {
+    "message": "Live preview $1 — built-in default until you move & Save"
+  },
+  "font_cap_weight_stored": {
+    "message": "Stored font-weight: $1"
+  },
+  "font_cap_weight_keyword": {
+    "message": "Custom weight keyword saved (slider preview $1)"
+  },
+  "font_cap_stretch_live_default": {
+    "message": "Live preview $1% — built-in default until you move & Save"
+  },
+  "font_cap_stretch_stored": {
+    "message": "Stored font-stretch: $1%"
+  },
+  "font_cap_stretch_keyword": {
+    "message": "Saved keyword stretch — slider preview $1%"
+  },
+  "font_hint_saved": {
+    "message": " (saved: $1)"
+  },
+  "remove_row_aria": {
+    "message": "Remove row"
+  },
+  "font_preset_default": {
+    "message": "Default"
+  },
+  "font_preset_gothic": {
+    "message": "Gothic / Sans"
+  },
+  "font_preset_mincho": {
+    "message": "Mincho / Serif"
+  },
+  "font_preset_system": {
+    "message": "System UI"
+  },
+  "font_preset_mono": {
+    "message": "Monospace"
+  },
+  "font_preset_latin_sans": {
+    "message": "Latin / UI sans"
+  },
+  "faq_toc_local": {
+    "message": "Local files / Incognito"
+  },
+  "faq_toc_disable": {
+    "message": "Disable on a site"
+  },
+  "faq_toc_site_speed": {
+    "message": "Default speed per site"
+  },
+  "faq_toc_remember": {
+    "message": "Remember speed"
+  },
+  "faq_toc_keys": {
+    "message": "Shortcut conflicts"
+  },
+  "faq_toc_position": {
+    "message": "Controller positioning"
+  },
+  "faq_toc_missing": {
+    "message": "Controller not showing"
+  },
+  "faq_toc_spa": {
+    "message": "Speed resets on navigate"
+  },
+  "faq_toc_audio": {
+    "message": "Audio support"
+  },
+  "faq_block_local": {
+    "message": "<h4 id=\"faq-local\">The speed controls are not showing up for local videos or Incognito mode?</h4>\n<p>To enable playback of local media (e.g. File &gt; Open File) or Incognito mode, you need to manually grant additional permissions to the extension.</p>\n<ul>\n<li>In a new tab, navigate to <code>chrome://extensions</code></li>\n<li>Find &quot;Video Speed Controller Plus&quot; extension in the list and enable &quot;Allow access to file URLs&quot; and/or &quot;Allow in Incognito&quot;.</li>\n</ul>"
+  },
+  "faq_block_disable": {
+    "message": "<h4 id=\"faq-disable\">How do I disable the extension on a specific site?</h4>\n<p>Go to <strong>Advanced &gt; Site rules</strong> and add a rule with the site&apos;s domain (e.g. <code>example.com</code>). Check the <strong>Disable</strong> checkbox. The extension will not inject on that site. You can also use regex patterns like <code>/\\.edu$/i</code> to match multiple domains.</p>"
+  },
+  "faq_block_site_speed": {
+    "message": "<h4 id=\"faq-site-speed\">How do I set a default speed for a specific site?</h4>\n<p>In <strong>Advanced &gt; Site rules</strong>, add a rule with the site&apos;s domain and set the <strong>Speed</strong> field to your desired value (e.g. <code>2</code> for 2x). Leave the Disable checkbox unchecked. Every new video on that site will start at that speed.</p>"
+  },
+  "faq_block_remember": {
+    "message": "<h4 id=\"faq-remember\">How does &quot;Remember playback speed&quot; interact with site rules?</h4>\n<p>When <code>rememberSpeed</code> is <strong>off</strong> (default), each page load starts at 1x &mdash; or the site rule speed if one matches. Your in-session speed changes apply to all new videos but are forgotten on page reload.</p>\n<p>When <code>rememberSpeed</code> is <strong>on</strong>, the last speed you set is stored and persists across sessions. This stored speed <strong>takes precedence</strong> over site rule defaults. To let a site rule win again, either turn off <code>rememberSpeed</code> or manually reset to 1x.</p>"
+  },
+  "faq_block_keys": {
+    "message": "<h4 id=\"faq-keys\">A site&apos;s keyboard shortcuts conflict with mine. What can I do?</h4>\n<p>Three options:</p>\n<ul>\n<li><strong>Add a modifier:</strong> In Settings &gt; Shortcuts, add <code>Shift</code>, <code>Ctrl</code>, or <code>Alt</code> to your shortcut keys to create chord combinations the site won&apos;t intercept.</li>\n<li><strong>Rebind to unused keys:</strong> Change the default key to one the site doesn&apos;t use.</li>\n<li><strong>Enable exclusive mode:</strong> Turn on <code>Exclusive keyboard shortcuts</code> in Preferences to prevent sites from also handling your VSC shortcut keys.</li>\n</ul>"
+  },
+  "faq_block_position": {
+    "message": "<h4 id=\"faq-position\">The controller overlaps with site controls. How do I reposition it?</h4>\n<p>Go to <strong>Advanced &gt; Controller CSS</strong>. Add a domain rule targeting <code>vsc-controller</code> using the <code>--vsc-domain</code> CSS variable. Example:</p>\n<p><code>:root[style*='--vsc-domain: &quot;example.com&quot;'] vsc-controller { position: relative; top: 60px; }</code></p>\n<p>You can also drag the controller to a new position on any page. See the existing rules for YouTube, Netflix, etc. as reference.</p>"
+  },
+  "faq_block_missing": {
+    "message": "<h4 id=\"faq-missing\">The controller is not appearing on a site. Why?</h4>\n<p>Common causes:</p>\n<ul>\n<li>The site is in your <strong>Site rules</strong> with Disable checked &mdash; remove or uncheck it.</li>\n<li>The site uses Flash or a non-HTML5 player &mdash; the extension only works with native <code>&lt;video&gt;</code> and <code>&lt;audio&gt;</code> elements.</li>\n<li><code>Hide controller by default</code> is enabled &mdash; press your display toggle shortcut (default: <code>V</code>) to show it.</li>\n</ul>"
+  },
+  "faq_block_spa": {
+    "message": "<h4 id=\"faq-spa\">Speed resets when I navigate on YouTube or similar single-page apps?</h4>\n<p>YouTube uses SPA navigation &mdash; the page doesn&apos;t fully reload, but the player may reinitialize. The extension restores speed from the in-session value automatically. If speed still resets, enable <code>rememberSpeed</code> in Preferences to persist speed across navigations and sessions.</p>"
+  },
+  "faq_block_audio": {
+    "message": "<h4 id=\"faq-audio\">Does this work with audio elements, not just video?</h4>\n<p>Yes. When <code>Audio support</code> is enabled in Preferences (on by default), the controller appears on <code>&lt;audio&gt;</code> elements too. All speed controls and keyboard shortcuts work identically for audio.</p>"
+  }
+}
