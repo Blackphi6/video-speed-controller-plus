@@ -1,5 +1,6 @@
 # Video Speed Controller Plus
 
-Chromium extension sources: **`video_speed_controller_plus-0.0.1/`** — load unpacked from the folder that contains `manifest.json`.
+Chromium extension sources live in **`video_speed_controller_plus-0.0.1/`**. Load **unpacked** from the folder that contains `manifest.json`.
 
-Details: [video_speed_controller_plus-0.0.1/README.md](video_speed_controller_plus-0.0.1/README.md)
+- **[README (English)](video_speed_controller_plus-0.0.1/README.md)** — full documentation  
+- **[日本語はこちら / Japanese](video_speed_controller_plus-0.0.1/README.ja.md)**
