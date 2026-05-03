@@ -26,4 +26,4 @@ We follow these standards to ensure the protection of your privacy:
 We may update our Privacy Policy from time to time. Thus, we advise you to review this page periodically for any changes. We will notify you of any changes by posting the new Privacy Policy on this page.
 
 ## Contact Us
-If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us by opening a discussion the extension repository or contacting the author via information provided in GitHub profile.
+If you have any questions or suggestions about our Privacy Policy, open an issue or discussion on **[github.com/Blackphi6/video-speed-controller-plus](https://github.com/Blackphi6/video-speed-controller-plus)**, or contact the maintainer via their GitHub profile.

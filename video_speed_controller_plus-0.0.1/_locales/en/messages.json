@@ -458,6 +458,9 @@
   "faq_toc_audio": {
     "message": "Audio support"
   },
+  "faq_toc_source": {
+    "message": "Source code & issues"
+  },
   "faq_block_local": {
     "message": "<h4 id=\"faq-local\">The speed controls are not showing up for local videos or Incognito mode?</h4>\n<p>To enable playback of local media (e.g. File &gt; Open File) or Incognito mode, you need to manually grant additional permissions to the extension.</p>\n<ul>\n<li>In a new tab, navigate to <code>chrome://extensions</code></li>\n<li>Find &quot;Video Speed Controller Plus&quot; extension in the list and enable &quot;Allow access to file URLs&quot; and/or &quot;Allow in Incognito&quot;.</li>\n</ul>"
   },
@@ -484,5 +487,8 @@
   },
   "faq_block_audio": {
     "message": "<h4 id=\"faq-audio\">Does this work with audio elements, not just video?</h4>\n<p>Yes. When <code>Audio support</code> is enabled in Preferences (on by default), the controller appears on <code>&lt;audio&gt;</code> elements too. All speed controls and keyboard shortcuts work identically for audio.</p>"
+  },
+  "faq_block_source": {
+    "message": "<h4 id=\"faq-source\">Where is the source code? Where do I report bugs?</h4>\n<p><strong>Video Speed Controller Plus</strong> source and issue tracker: <a href=\"https://github.com/Blackphi6/video-speed-controller-plus\" target=\"_blank\" rel=\"noopener noreferrer\">github.com/Blackphi6/video-speed-controller-plus</a>. Upstream lineage (original project): <a href=\"https://github.com/igrigorik/videospeed\" target=\"_blank\" rel=\"noopener noreferrer\">igrigorik/videospeed</a>.</p>"
   }
 }

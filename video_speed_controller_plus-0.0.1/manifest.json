@@ -45,6 +45,7 @@
    },
    "permissions": [ "storage" ],
    "short_name": "VSC Plus",
+   "homepage_url": "https://github.com/Blackphi6/video-speed-controller-plus",
    "update_url": "https://clients2.google.com/service/update2/crx",
    "version": "0.10.2"
 }

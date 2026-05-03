@@ -5,6 +5,8 @@
 Speed up or slow down **HTML5 video and audio** with **keyboard shortcuts** — same core idea as upstream — plus **customizable on-screen controller styling** (colors, transparency, fonts), **themed popup and settings**, and **locales** (`en`, `ja`, `zh_CN`).  
 This repo is **not** the [original Chrome Web Store listing](https://chromewebstore.google.com/detail/video-speed-controller/nffaoalbilbmmfgbnbgppjihopabppdk); publish separately if you ship your own build.
 
+**Source code & issues (Video Speed Controller Plus):** [github.com/Blackphi6/video-speed-controller-plus](https://github.com/Blackphi6/video-speed-controller-plus)
+
 **Japanese:** [README.ja.md](./README.ja.md)
 
 ## Highlights vs upstream focus here
@@ -26,7 +28,7 @@ Icons live under `assets/icons/` (`icon16.png`, …). Replace files in place; if
 
 ## Contributing & issues
 
-Issues and PRs are welcome for **Plus**-specific behavior. Bugs that also occur on **[upstream videospeed](https://github.com/igrigorik/videospeed)** may fit better there.
+Use the **[Plus repository](https://github.com/Blackphi6/video-speed-controller-plus)** for issues and pull requests about this fork. Bugs that also reproduce on stock **[upstream videospeed](https://github.com/igrigorik/videospeed)** may fit better there first.
 
 ## License
 

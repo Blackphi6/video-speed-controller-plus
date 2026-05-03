@@ -2,7 +2,7 @@
 
 **Video Speed Controller Plus** is a derivative of **[Video Speed Controller](https://github.com/igrigorik/videospeed)** (upstream). It is MIT-licensed; contributions are welcome.
 
-Use **this repository’s** clone URL and issue tracker for Plus-specific changes. For bugs that also occur in stock upstream, consider reporting to **[igrigorik/videospeed](https://github.com/igrigorik/videospeed)** first.
+Use **[github.com/Blackphi6/video-speed-controller-plus](https://github.com/Blackphi6/video-speed-controller-plus)** for cloning and Plus-specific issues. For bugs that also occur in stock upstream, consider reporting to **[igrigorik/videospeed](https://github.com/igrigorik/videospeed)** first.
 
 ## Get Started
 
@@ -34,9 +34,11 @@ a POSIX shell. Windows users need:
 4. Clone **your fork** locally:
 
    ```sh
-   git clone https://github.com/<USERNAME>/<YOUR_PLUS_REPO>.git
-   cd <YOUR_PLUS_REPO>
+   git clone https://github.com/Blackphi6/video-speed-controller-plus.git
+   cd video-speed-controller-plus
    ```
+
+   Extension sources for **Load unpacked** live under `video_speed_controller_plus-0.0.1/` (the directory that contains `manifest.json`).
 
 5. Create a branch for your changes
 

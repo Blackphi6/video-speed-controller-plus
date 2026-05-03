@@ -10,6 +10,8 @@
 
 本リポジトリは [Chrome Web Store のオリジナル一覧](https://chromewebstore.google.com/detail/video-speed-controller/nffaoalbilbmmfgbnbgppjihopabppdk) そのものではありません。別途ビルドを配布する場合はそちらで公開してください。
 
+**ソースコード・Issue（本フォーク）:** [github.com/Blackphi6/video-speed-controller-plus](https://github.com/Blackphi6/video-speed-controller-plus)
+
 ## Plus で強調している点
 
 - **コントローラーの外観** — 速度表示とバーを別スタイルにできるほか、不透明度・サイズ・フォント・任意の色指定など。
@@ -29,7 +31,7 @@
 
 ## コントリビューション・Issue
 
-**Plus 固有の挙動**について Issue／PR を歓迎します。上流と同じ再現手順の不具合は [igrigorik/videospeed](https://github.com/igrigorik/videospeed) への報告が向く場合があります。
+**Plus（本フォーク）**の Issue／PR は [Blackphi6/video-speed-controller-plus](https://github.com/Blackphi6/video-speed-controller-plus) でお願いします。ストック版と同じ手順で再現する不具合は [igrigorik/videospeed](https://github.com/igrigorik/videospeed) 向きの場合があります。
 
 ## ライセンス
 

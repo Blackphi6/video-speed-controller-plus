@@ -458,6 +458,9 @@
   "faq_toc_audio": {
     "message": "音声への対応"
   },
+  "faq_toc_source": {
+    "message": "ソースと Issue"
+  },
   "faq_block_local": {
     "message": "<h4 id=\"faq-local\">ローカル動画やシークレットでコントローラーが出ません</h4>\n<p>ローカルメディア（ファイルを開くなど）やシークレットで使うには、拡張機能に追加の許可を手動で付与してください。</p>\n<ul>\n<li>新しいタブで <code>chrome://extensions</code> を開く</li>\n<li>一覧から「Video Speed Controller Plus」を見つけ、「ファイルの URL へのアクセスを許可」および／または「シークレットモードで許可」をオンにする</li>\n</ul>"
   },
@@ -484,5 +487,8 @@
   },
   "faq_block_audio": {
     "message": "<h4 id=\"faq-audio\">動画だけでなく音声にも使えますか？</h4>\n<p>はい。環境設定で<code>音声に対応</code>がオン（既定）なら、<code>&lt;audio&gt;</code> にもコントローラーが表示されます。速度操作とキーボードショートカットは同様に動きます。</p>"
+  },
+  "faq_block_source": {
+    "message": "<h4 id=\"faq-source\">ソースコードはどこですか？不具合はどこに報告しますか？</h4>\n<p><strong>Video Speed Controller Plus</strong> のソースと Issue: <a href=\"https://github.com/Blackphi6/video-speed-controller-plus\" target=\"_blank\" rel=\"noopener noreferrer\">github.com/Blackphi6/video-speed-controller-plus</a>。上流（オリジナル）: <a href=\"https://github.com/igrigorik/videospeed\" target=\"_blank\" rel=\"noopener noreferrer\">igrigorik/videospeed</a>。</p>"
   }
 }

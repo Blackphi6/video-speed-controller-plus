@@ -458,6 +458,9 @@
   "faq_toc_audio": {
     "message": "音频支持"
   },
+  "faq_toc_source": {
+    "message": "源代码与问题反馈"
+  },
   "faq_block_local": {
     "message": "<h4 id=\"faq-local\">本地视频或无痕模式下不显示速度控件？</h4>\n<p>若要播放本地媒体（例如“文件 &gt; 打开文件”）或在无痕模式使用，需要手动为扩展授予额外权限。</p>\n<ul>\n<li>在新标签页打开 <code>chrome://extensions</code></li>\n<li>在列表中找到 “Video Speed Controller Plus”，启用“允许访问文件网址”和/或“在无痕模式下允许”。</li>\n</ul>"
   },
@@ -484,5 +487,8 @@
   },
   "faq_block_audio": {
     "message": "<h4 id=\"faq-audio\">是否支持音频而不只是视频？</h4>\n<p>支持。当偏好设置中的<code>支持音频</code>开启（默认开启）时，控制器也会出现在 <code>&lt;audio&gt;</code> 上，速度与快捷键行为一致。</p>"
+  },
+  "faq_block_source": {
+    "message": "<h4 id=\"faq-source\">源代码在哪里？如何反馈问题？</h4>\n<p><strong>Video Speed Controller Plus</strong> 的源码与问题跟踪：<a href=\"https://github.com/Blackphi6/video-speed-controller-plus\" target=\"_blank\" rel=\"noopener noreferrer\">github.com/Blackphi6/video-speed-controller-plus</a>。上游（原版）项目：<a href=\"https://github.com/igrigorik/videospeed\" target=\"_blank\" rel=\"noopener noreferrer\">igrigorik/videospeed</a>。</p>"
   }
 }
