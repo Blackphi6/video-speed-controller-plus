@@ -1,0 +1,43 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: video_speed_controller_plus-0.0.1
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Node syntax check (extension scripts)
+        run: |
+          set -e
+          for f in background.js content-bridge.js inject.js \
+            ui/options/options.js \
+            ui/popup/popup.js ui/i18n.js ui/theme-apply.js \
+            ui/controller-appearance-preview.js ui/controller-color-ui.js \
+            ui/controller-font-presets.js ui/controller-font-tuning.js; do
+            node --check "$f"
+          done
+
+      - name: Repo integrity (manifest ↔ generate-locales, locales)
+        run: node tools/verify-repo-integrity.mjs
+
+      - name: Validate JSON
+        run: |
+          python3 -m json.tool manifest.json > /dev/null
+          for f in _locales/*/messages.json; do python3 -m json.tool "$f" > /dev/null; done

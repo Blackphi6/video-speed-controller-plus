@@ -10,4 +10,5 @@ What does this PR change and why?
 ## Checklist
 
 - [ ] Loaded the extension **unpacked** from `video_speed_controller_plus-0.0.1/` and smoke-tested the affected flow
-- [ ] If you changed user-visible strings: updated `video_speed_controller_plus-0.0.1/tools/generate-locales.mjs` and ran `node tools/generate-locales.mjs` from that folder
+- [ ] Ran **`npm run verify`** in `video_speed_controller_plus-0.0.1/` (or confirmed CI would pass)
+- [ ] If you changed user-visible strings: updated `video_speed_controller_plus-0.0.1/tools/generate-locales.mjs` and ran `npm run locales` from that folder

@@ -12,107 +12,54 @@ User-visible strings for `en` / `ja` / `zh_CN` are generated from **`tools/gener
 
 ```sh
 cd video_speed_controller_plus-0.0.1
-node tools/generate-locales.mjs
+npm run locales
 ```
 
-Keep **`REPO_HOME_URL`** in that script aligned with **`homepage_url`** in `manifest.json`.
+Keep **`REPO_HOME_URL`** in that script aligned with **`homepage_url`** in `manifest.json`. After editing either field, run **`npm run verify`** (see below) so CI and local checks stay in sync.
 
 ## Get Started
 
-### Windows Prerequisites
+### Prerequisites
 
-The build scripts and tests are cross-platform, but Git hooks (Husky) require
-a POSIX shell. Windows users need:
-
-1. **[Git for Windows](https://git-scm.com/download/win)** — provides the
-   `sh.exe` that Husky hooks run under. Use Git Bash or a terminal backed by
-   Git's bundled shell.
-2. **Node.js >= 22.13** — install via any version manager that reads `.nvmrc`
-   ([fnm](https://github.com/Schniz/fnm), [nvm-windows](https://github.com/coreybutler/nvm-windows),
-   [volta](https://volta.sh/), etc.). Make sure Node is available in both your
-   regular terminal and Git Bash.
-3. **Husky + Node in hooks** — Husky hooks run in a non-interactive shell where
-   your shell profile isn't sourced. If hooks fail with "node not found", add
-   your version manager's init to `~/.config/husky/init.sh` (Husky sources this
-   before every hook). For example with fnm:
-   ```sh
-   echo 'eval "$(fnm env)"' >> ~/.config/husky/init.sh
-   ```
+1. **Git** — to fork and push changes.
+2. **Chromium-based browser** — Chrome, Brave, Edge, etc., with **Developer mode** enabled on `chrome://extensions`.
+3. **Node.js 22+** (optional but recommended) — use the repo’s **`.nvmrc`** with [fnm](https://github.com/Schniz/fnm), nvm, or similar. Needed for `tools/generate-locales.mjs`, `tools/verify-repo-integrity.mjs`, and CI parity.
 
 ### Contribution Process
 
-1. You must have a github account and be logged in
-2. Open **this Video Speed Controller Plus repository** on GitHub (your fork or the canonical Plus repo URL).
-3. Fork the repo using **Fork** on the top-right.
-4. Clone **your fork** locally:
+1. Sign in to GitHub and open **this Video Speed Controller Plus repository** (your fork or the canonical URL).
+2. Fork if needed, then clone locally:
 
    ```sh
    git clone https://github.com/Blackphi6/video-speed-controller-plus.git
    cd video-speed-controller-plus
    ```
 
-   Extension sources for **Load unpacked** live under `video_speed_controller_plus-0.0.1/` (the directory that contains `manifest.json`).
+   Extension sources for **Load unpacked** live under **`video_speed_controller_plus-0.0.1/`** (the directory that contains **`manifest.json`**).
 
-5. Create a branch for your changes
-
-   ```sh
-   git checkout -b bugfix/short-description
-   ```
-
-6. Open the code in your favorite code editor, make your changes
+3. Create a branch:
 
    ```sh
-   echo "Awesome changes" > somefile.js
-   git add .
+   git checkout -b fix/short-description
    ```
 
-   > Important: Your commit must be formatted using
-   > [prettier](https://prettier.io/). If it is not it may be autoformatted for
-   > you or your pull request may be rejected.
-
-7. Next, open Chrome/Brave/Chromium and enable developer mode via
-   `Settings > Extensions > Manage Extensions` and toggle `Developer mode` in
-   the top-right corner.
-
-8. Install dependencies
+4. Make your edits, then **validate locally** (from `video_speed_controller_plus-0.0.1/`):
 
    ```sh
-   npm install
+   npm run verify
    ```
 
-9. Build the extension
+   This checks that **`homepage_url`** and **`REPO_HOME_URL`** match, locale JSON parses, and expected keys exist.
 
-   ```sh
-   npm run build
-   ```
+5. **Load unpacked** in the browser: choose the **`video_speed_controller_plus-0.0.1/`** folder (not a `dist/` output — this repo ships the loadable tree directly).
 
-10. Click `Load unpacked` and select the `dist/` folder (the build output).
+6. Manually exercise the flow you changed (popup, options, playback page).
 
-11. Try out your changes, make sure they work as expected
+7. Commit and push, then open a **Pull Request**. Ensure **GitHub Actions CI** is green.
 
-12. Commit and push your changes to github
-
-    ```sh
-    git commit -m "Awesome description of some awesome changes."
-    git push
-    ```
-
-13. Open your branch up on the github website then click `New pull request` and
-    write up a description of your changes.
+> **Note:** There is no `npm run build` or `dist/` step in this repository; older upstream-style build docs do not apply here.
 
 ## Optional
-
-### Run Pre-Commit Checks Locally
-
-Installing [pre-commit](https://pre-commit.com/) is easy to do (click the link
-for instructions on your platform). This repo comes with pre-commit already
-configured. Doing this will ensure that your project is properly formatted and
-runs some very basic tests. Once you have pre-commit installed on your system,
-simply enter `pre-commit install` in your terminal in the folder to have these
-checks run automatically each time you commit.
-
-Even better, after issueing the install command you can now manually run
-pre-commit checks before committing via `pre-commit run --all-files`
 
 ### Pull upstream (original Video Speed Controller) changes
 
