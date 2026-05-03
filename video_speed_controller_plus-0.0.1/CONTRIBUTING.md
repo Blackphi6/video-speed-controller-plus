@@ -49,7 +49,7 @@ Keep **`REPO_HOME_URL`** in that script aligned with **`homepage_url`** in `mani
    npm run verify
    ```
 
-   This checks that **`homepage_url`** and **`REPO_HOME_URL`** match, locale JSON parses, and expected keys exist.
+   This checks that **`homepage_url`** and **`REPO_HOME_URL`** match, locale JSON parses, required keys exist, **every path listed in `manifest.json` exists**, and **popup/options HTML** references real CSS/JS/image files.
 
 5. **Load unpacked** in the browser: choose the **`video_speed_controller_plus-0.0.1/`** folder (not a `dist/` output — this repo ships the loadable tree directly).
 

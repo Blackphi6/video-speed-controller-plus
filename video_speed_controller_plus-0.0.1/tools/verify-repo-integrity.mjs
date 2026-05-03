@@ -18,6 +18,58 @@ function fail(msg) {
   process.exit(1);
 }
 
+/** Every path manifest references must exist under extension root. */
+function collectManifestFilePaths(manifest) {
+  const paths = new Set();
+  const add = (p) => {
+    if (typeof p === 'string' && p.trim()) paths.add(p.trim());
+  };
+  if (manifest.action?.default_popup) add(manifest.action.default_popup);
+  if (manifest.action?.default_icon) {
+    for (const p of Object.values(manifest.action.default_icon)) add(p);
+  }
+  if (manifest.background?.service_worker) add(manifest.background.service_worker);
+  if (manifest.options_ui?.page) add(manifest.options_ui.page);
+  if (manifest.icons) {
+    for (const p of Object.values(manifest.icons)) add(p);
+  }
+  if (Array.isArray(manifest.content_scripts)) {
+    for (const cs of manifest.content_scripts) {
+      if (Array.isArray(cs.js)) for (const p of cs.js) add(p);
+      if (Array.isArray(cs.css)) for (const p of cs.css) add(p);
+    }
+  }
+  return [...paths];
+}
+
+/** Resolve script/link/img references in bundled HTML (relative to that HTML file). */
+function verifyBundledHtmlAssets(htmlRel) {
+  const htmlPath = path.join(root, htmlRel);
+  if (!fs.existsSync(htmlPath)) fail(`missing ${htmlRel}`);
+  const dir = path.dirname(htmlPath);
+  const html = fs.readFileSync(htmlPath, 'utf8');
+  const patterns = [
+    /<script[^>]*\ssrc="([^"]+)"/gi,
+    /<link[^>]*\shref="([^"]+)"/gi,
+    /<img[^>]*\ssrc="([^"]+)"/gi,
+  ];
+  for (const re of patterns) {
+    let m;
+    while ((m = re.exec(html))) {
+      const raw = m[1];
+      if (raw.startsWith('data:') || raw.startsWith('chrome-extension:')) continue;
+      const resolved = path.normalize(path.join(dir, decodeURI(raw)));
+      const relFromRoot = path.relative(root, resolved);
+      if (relFromRoot.startsWith('..') || path.isAbsolute(relFromRoot)) {
+        fail(`${htmlRel}: asset escapes extension root: "${raw}"`);
+      }
+      if (!fs.existsSync(resolved)) {
+        fail(`${htmlRel}: missing asset "${raw}" (${relFromRoot})`);
+      }
+    }
+  }
+}
+
 const manifestPath = path.join(root, 'manifest.json');
 if (!fs.existsSync(manifestPath)) fail('missing manifest.json');
 
@@ -69,15 +121,15 @@ if (!optionsJs.includes(repoConst)) {
   fail('ui/options/options.js should include the same fallback URL as REPO_HOME_URL');
 }
 
-for (const rel of [
-  'background.js',
-  'content-bridge.js',
-  'inject.js',
-  'ui/popup/popup.js',
-  'ui/i18n.js',
-]) {
-  const p = path.join(root, rel);
-  if (!fs.existsSync(p)) fail(`missing ${rel}`);
+for (const rel of collectManifestFilePaths(manifest)) {
+  const abs = path.join(root, rel);
+  if (!fs.existsSync(abs)) {
+    fail(`manifest references missing file: "${rel}"`);
+  }
+}
+
+for (const htmlRel of ['ui/popup/popup.html', 'ui/options/options.html']) {
+  verifyBundledHtmlAssets(htmlRel);
 }
 
 console.log('verify-repo-integrity: OK');

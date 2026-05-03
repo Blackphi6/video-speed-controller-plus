@@ -1,6 +1,7 @@
 # Video Speed Controller Plus
 
 [![GitHub Repository](https://img.shields.io/badge/GitHub-Blackphi6%2Fvideo--speed--controller--plus-181717?logo=github)](https://github.com/Blackphi6/video-speed-controller-plus)
+[![CI](https://github.com/Blackphi6/video-speed-controller-plus/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/Blackphi6/video-speed-controller-plus/actions/workflows/ci.yml)
 
 Chromium extension sources live in **`video_speed_controller_plus-0.0.1/`**. Load **unpacked** from the folder that contains `manifest.json`.
 
