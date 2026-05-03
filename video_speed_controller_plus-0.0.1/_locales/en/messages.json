@@ -135,7 +135,7 @@
     "message": "Spectrum for controller border color"
   },
   "preview_heading_label": {
-    "message": "Approximate preview<br /><em>Rough mock on a checker pattern (opacity, size, border). Sliders above update live; empty saved values use defaults (opacity 0.3, size 14px, border off).</em>"
+    "message": "Approximate preview<br /><em>Rough mock on a checker pattern. Updates live: opacity, size, border, speed text color, and controller background (defaults match the extension when fields are empty).</em>"
   },
   "speed_text_color_label": {
     "message": "Speed indicator text color<br /><em>Color of the playback-rate number on the in-page controller. Hex or CSS color; leave empty for default white. Use the spectrum for quick hex picks.</em>"

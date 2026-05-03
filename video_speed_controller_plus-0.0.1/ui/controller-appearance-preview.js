@@ -23,6 +23,24 @@
     return Math.min(12, Math.max(0, n));
   }
 
+  /** Valid CSS color for speed text; fallback white (matches inject). */
+  function resolveSpeedTextColorCss(raw) {
+    const s = String(raw ?? '').trim();
+    if (!s) return '#ffffff';
+    if (typeof CSS !== 'undefined' && CSS.supports && CSS.supports('color', s)) return s;
+    return '#ffffff';
+  }
+
+  /** Valid CSS background for controller panel; fallback black (matches inject). */
+  function resolvePanelBackgroundCss(raw) {
+    const s = String(raw ?? '').trim();
+    if (!s) return 'black';
+    if (typeof CSS !== 'undefined' && CSS.supports) {
+      if (CSS.supports('background-color', s) || CSS.supports('background', s)) return s;
+    }
+    return 'black';
+  }
+
   /** Valid CSS color for border; fallback white */
   function resolveBorderColorCss(raw) {
     const s = String(raw ?? '').trim();
@@ -111,6 +129,18 @@
       mock.style.border = `${bwEff}px solid ${bcCss}`;
     } else {
       mock.style.border = 'none';
+    }
+
+    const stEl = document.getElementById('controllerSpeedTextColor');
+    const spEl = document.getElementById('controllerPanelBackgroundColor');
+    const speedSpan = mock.querySelector('.controller-appearance-speed');
+    const stRaw = stEl ? String(stEl.value ?? '').trim() : '';
+    const spRaw = spEl ? String(spEl.value ?? '').trim() : '';
+    const speedCss = resolveSpeedTextColorCss(stRaw);
+    const panelCss = resolvePanelBackgroundCss(spRaw);
+    mock.style.backgroundColor = panelCss;
+    if (speedSpan) {
+      speedSpan.style.color = speedCss;
     }
 
     const parts = [];
@@ -209,6 +239,19 @@
       refreshControllerAppearancePreview();
     });
     document.getElementById('controllerBorderColor')?.addEventListener('change', () => {
+      refreshControllerAppearancePreview();
+    });
+
+    document.getElementById('controllerSpeedTextColor')?.addEventListener('input', () => {
+      refreshControllerAppearancePreview();
+    });
+    document.getElementById('controllerSpeedTextColor')?.addEventListener('change', () => {
+      refreshControllerAppearancePreview();
+    });
+    document.getElementById('controllerPanelBackgroundColor')?.addEventListener('input', () => {
+      refreshControllerAppearancePreview();
+    });
+    document.getElementById('controllerPanelBackgroundColor')?.addEventListener('change', () => {
       refreshControllerAppearancePreview();
     });
 

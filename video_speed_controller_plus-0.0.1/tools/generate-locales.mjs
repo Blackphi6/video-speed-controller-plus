@@ -87,7 +87,7 @@ const en = {
   aria_controller_border_width: msg('Controller border width in pixels'),
   aria_spectrum_controller_border: msg('Spectrum for controller border color'),
   preview_heading_label: msg(
-    'Approximate preview<br /><em>Rough mock on a checker pattern (opacity, size, border). Sliders above update live; empty saved values use defaults (opacity 0.3, size 14px, border off).</em>',
+    'Approximate preview<br /><em>Rough mock on a checker pattern. Updates live: opacity, size, border, speed text color, and controller background (defaults match the extension when fields are empty).</em>',
   ),
   speed_text_color_label: msg(
     'Speed indicator text color<br /><em>Color of the playback-rate number on the in-page controller. Hex or CSS color; leave empty for default white. Use the spectrum for quick hex picks.</em>',
@@ -289,7 +289,7 @@ const ja = {
   aria_controller_border_width: msg('コントローラー枠線の太さ（ピクセル）'),
   aria_spectrum_controller_border: msg('枠線色のスペクトラム'),
   preview_heading_label: msg(
-    'おおよそのプレビュー<br /><em>チェック背景上の簡易表示です。不透明度・サイズ・枠線が上のスライダーに連動します。未保存の空値は既定（不透明度 0.3、サイズ 14px、枠線なし）です。</em>',
+    'おおよそのプレビュー<br /><em>チェック背景上の簡易表示。不透明度・サイズ・枠線・速度文字色・コントローラー背景が上の入力に連動して更新されます。空欄は拡張機能の既定と同じ見た目です。</em>',
   ),
   speed_text_color_label: msg(
     '速度表示の文字色<br /><em>ページ内コントローラーの再生速度数字の色です。16進または CSS 色。空欄で既定の白。スペクトラムで簡単に選べます。</em>',
@@ -499,7 +499,7 @@ const zhCN = {
   aria_controller_border_width: msg('控制器边框宽度（像素）'),
   aria_spectrum_controller_border: msg('边框颜色的色谱'),
   preview_heading_label: msg(
-    '大致预览<br /><em>棋盘背景上的示意（不透明度、大小、边框）。上方滑块实时更新；未保存空值使用默认（不透明度 0.3、大小 14px、无边框）。</em>',
+    '大致预览<br /><em>棋盘背景上的示意。不透明度、大小、边框、速度文字颜色与控制器背景会随上方输入实时更新；留空则与扩展默认一致。</em>',
   ),
   speed_text_color_label: msg(
     '速度数字颜色<br /><em>页内控制器上播放速率数字的颜色。十六进制或 CSS 颜色；留空为默认白色。可用色谱快速选取。</em>',
