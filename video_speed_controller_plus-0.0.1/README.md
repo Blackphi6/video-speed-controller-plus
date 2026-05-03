@@ -30,6 +30,8 @@ Icons live under `assets/icons/` (`icon16.png`, …). Replace files in place; if
 
 Use the **[Plus repository](https://github.com/Blackphi6/video-speed-controller-plus)** for issues and pull requests about this fork. Bugs that also reproduce on stock **[upstream videospeed](https://github.com/igrigorik/videospeed)** may fit better there first.
 
+**Security:** see [SECURITY.md](../SECURITY.md) at the repo root (do not file public issues for undisclosed vulnerabilities).
+
 ## License
 
-MIT — see [`LICENSE`](./LICENSE). Original © Ilya Grigorik; changes in this repository are distributed under the same license.
+MIT — see [`LICENSE`](./LICENSE) and [`NOTICE`](../NOTICE). Original © Ilya Grigorik; changes in this repository are distributed under the same license.

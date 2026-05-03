@@ -33,6 +33,8 @@
 
 **Plus（本フォーク）**の Issue／PR は [Blackphi6/video-speed-controller-plus](https://github.com/Blackphi6/video-speed-controller-plus) でお願いします。ストック版と同じ手順で再現する不具合は [igrigorik/videospeed](https://github.com/igrigorik/videospeed) 向きの場合があります。
 
+**セキュリティ:** 未公開の脆弱性はリポジトリ直下の [SECURITY.md](../SECURITY.md) に従ってください（公開 Issue は避けてください）。
+
 ## ライセンス
 
-MIT — [`LICENSE`](./LICENSE)。オリジナル © Ilya Grigorik。本リポジトリの変更も同ライセンスです。
+MIT — [`LICENSE`](./LICENSE) およびリポジトリ直下の [`NOTICE`](../NOTICE)。オリジナル © Ilya Grigorik。本リポジトリの変更も同ライセンスです。

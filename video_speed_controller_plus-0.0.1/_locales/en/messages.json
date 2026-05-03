@@ -371,6 +371,12 @@
   "popup_status_disabled": {
     "message": "Disabled. Reload page."
   },
+  "popup_repo_link": {
+    "message": "GitHub"
+  },
+  "popup_repo_link_title": {
+    "message": "Open Video Speed Controller Plus on GitHub"
+  },
   "appearance_meta_opacity_default": {
     "message": "opacity $1 (default 0.3 until saved)"
   },

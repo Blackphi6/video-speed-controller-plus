@@ -127,6 +127,24 @@ body {
   border-top: 1px solid var(--md-outline-variant);
 }
 
+.footer-repo {
+  display: flex;
+  justify-content: center;
+  padding: 6px 12px 0;
+  line-height: 1.2;
+}
+
+.repo-link {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--md-primary);
+  text-decoration: none;
+}
+
+.repo-link:hover {
+  text-decoration: underline;
+}
+
 .footer-content {
   display: flex;
   align-items: center;

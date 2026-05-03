@@ -371,6 +371,12 @@
   "popup_status_disabled": {
     "message": "無効にしました。ページを再読み込みしてください。"
   },
+  "popup_repo_link": {
+    "message": "GitHub"
+  },
+  "popup_repo_link_title": {
+    "message": "Video Speed Controller Plus の GitHub を開く"
+  },
   "appearance_meta_opacity_default": {
     "message": "不透明度 $1（保存まで既定 0.3）"
   },

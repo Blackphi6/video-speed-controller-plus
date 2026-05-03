@@ -371,6 +371,12 @@
   "popup_status_disabled": {
     "message": "已禁用。请刷新页面。"
   },
+  "popup_repo_link": {
+    "message": "GitHub"
+  },
+  "popup_repo_link_title": {
+    "message": "在 GitHub 上打开 Video Speed Controller Plus"
+  },
   "appearance_meta_opacity_default": {
     "message": "不透明度 $1（保存前默认 0.3）"
   },

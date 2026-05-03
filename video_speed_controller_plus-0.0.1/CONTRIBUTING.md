@@ -4,6 +4,19 @@
 
 Use **[github.com/Blackphi6/video-speed-controller-plus](https://github.com/Blackphi6/video-speed-controller-plus)** for cloning and Plus-specific issues. For bugs that also occur in stock upstream, consider reporting to **[igrigorik/videospeed](https://github.com/igrigorik/videospeed)** first.
 
+**Security:** see [SECURITY.md](../SECURITY.md) in the repository root.
+
+### i18n (locale strings)
+
+User-visible strings for `en` / `ja` / `zh_CN` are generated from **`tools/generate-locales.mjs`**. After editing that file, run:
+
+```sh
+cd video_speed_controller_plus-0.0.1
+node tools/generate-locales.mjs
+```
+
+Keep **`REPO_HOME_URL`** in that script aligned with **`homepage_url`** in `manifest.json`.
+
 ## Get Started
 
 ### Windows Prerequisites

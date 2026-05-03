@@ -7,18 +7,23 @@
   };
   document.addEventListener('DOMContentLoaded', () => {
     typeof window.VSC?.i18n?.applyDocument === 'function' &&
-      window.VSC.i18n.applyDocument(document),
-      p(),
-      document.querySelector('#config').addEventListener('click', () => {
-        chrome.runtime.openOptionsPage();
-      }),
-      document.querySelector('#disable').addEventListener('click', function () {
-        let e = !this.classList.contains('disabled');
-        S(!e, E);
-      }),
-      chrome.storage.sync.get({ enabled: !0 }, (e) => {
-        c(e.enabled);
-      });
+      window.VSC.i18n.applyDocument(document);
+    let m = document.querySelector('#repo-link');
+    if (m) {
+      let e = chrome.runtime.getManifest().homepage_url;
+      e && (m.href = e.replace(/\/$/, ''));
+    }
+    p();
+    document.querySelector('#config').addEventListener('click', () => {
+      chrome.runtime.openOptionsPage();
+    });
+    document.querySelector('#disable').addEventListener('click', function () {
+      let e = !this.classList.contains('disabled');
+      S(!e, E);
+    });
+    chrome.storage.sync.get({ enabled: !0 }, (e) => {
+      c(e.enabled);
+    });
     function S(e, t) {
       chrome.storage.sync.set({ enabled: e }, () => {
         c(e), t && t(e);

@@ -18,6 +18,10 @@ function msg(message, placeholders) {
 /** Shown in chrome://extensions and toolbar (distinct from upstream store listing). */
 const EXT_DISPLAY_NAME = 'Video Speed Controller Plus';
 
+/** Canonical Plus repo — must match `homepage_url` in manifest.json. */
+const REPO_HOME_URL = 'https://github.com/Blackphi6/video-speed-controller-plus';
+const UPSTREAM_REPO_URL = 'https://github.com/igrigorik/videospeed';
+
 const en = {
   ext_name: msg(EXT_DISPLAY_NAME),
   ext_description: msg(
@@ -197,6 +201,8 @@ vsc-controller { top: 50px !important; }
   popup_settings: msg('Settings'),
   popup_status_enabled: msg('Enabled. Reload page.'),
   popup_status_disabled: msg('Disabled. Reload page.'),
+  popup_repo_link: msg('GitHub'),
+  popup_repo_link_title: msg('Open Video Speed Controller Plus on GitHub'),
   appearance_meta_opacity_default: msg(
     'opacity $1 (default 0.3 until saved)',
   ),
@@ -391,6 +397,8 @@ const ja = {
   popup_settings: msg('設定'),
   popup_status_enabled: msg('有効にしました。ページを再読み込みしてください。'),
   popup_status_disabled: msg('無効にしました。ページを再読み込みしてください。'),
+  popup_repo_link: msg('GitHub'),
+  popup_repo_link_title: msg('Video Speed Controller Plus の GitHub を開く'),
   appearance_meta_opacity_default: msg('不透明度 $1（保存まで既定 0.3）'),
   appearance_meta_opacity_saved: msg('不透明度 $1'),
   appearance_meta_size_default: msg('文字 $1px（保存まで既定 14）'),
@@ -591,6 +599,8 @@ const zhCN = {
   popup_settings: msg('设置'),
   popup_status_enabled: msg('已启用。请刷新页面。'),
   popup_status_disabled: msg('已禁用。请刷新页面。'),
+  popup_repo_link: msg('GitHub'),
+  popup_repo_link_title: msg('在 GitHub 上打开 Video Speed Controller Plus'),
   appearance_meta_opacity_default: msg('不透明度 $1（保存前默认 0.3）'),
   appearance_meta_opacity_saved: msg('不透明度 $1'),
   appearance_meta_size_default: msg('文字 $1px（保存前默认 14）'),
@@ -627,6 +637,7 @@ Object.assign(en, {
   faq_toc_missing: msg('Controller not showing'),
   faq_toc_spa: msg('Speed resets on navigate'),
   faq_toc_audio: msg('Audio support'),
+  faq_toc_source: msg('Source code & issues'),
   faq_block_local: msg(
     `<h4 id="faq-local">The speed controls are not showing up for local videos or Incognito mode?</h4>
 <p>To enable playback of local media (e.g. File &gt; Open File) or Incognito mode, you need to manually grant additional permissions to the extension.</p>
@@ -680,6 +691,10 @@ Object.assign(en, {
     `<h4 id="faq-audio">Does this work with audio elements, not just video?</h4>
 <p>Yes. When <code>Audio support</code> is enabled in Preferences (on by default), the controller appears on <code>&lt;audio&gt;</code> elements too. All speed controls and keyboard shortcuts work identically for audio.</p>`,
   ),
+  faq_block_source: msg(
+    `<h4 id="faq-source">Where is the source code? Where do I report bugs?</h4>
+<p><strong>${EXT_DISPLAY_NAME}</strong> source and issue tracker: <a href="${REPO_HOME_URL}" target="_blank" rel="noopener noreferrer">github.com/Blackphi6/video-speed-controller-plus</a>. Upstream lineage (original project): <a href="${UPSTREAM_REPO_URL}" target="_blank" rel="noopener noreferrer">igrigorik/videospeed</a>.</p>`,
+  ),
 });
 
 Object.assign(ja, {
@@ -692,6 +707,7 @@ Object.assign(ja, {
   faq_toc_missing: msg('表示されないとき'),
   faq_toc_spa: msg('移動で速度が戻る'),
   faq_toc_audio: msg('音声への対応'),
+  faq_toc_source: msg('ソースと Issue'),
   faq_block_local: msg(
     `<h4 id="faq-local">ローカル動画やシークレットでコントローラーが出ません</h4>
 <p>ローカルメディア（ファイルを開くなど）やシークレットで使うには、拡張機能に追加の許可を手動で付与してください。</p>
@@ -745,6 +761,10 @@ Object.assign(ja, {
     `<h4 id="faq-audio">動画だけでなく音声にも使えますか？</h4>
 <p>はい。環境設定で<code>音声に対応</code>がオン（既定）なら、<code>&lt;audio&gt;</code> にもコントローラーが表示されます。速度操作とキーボードショートカットは同様に動きます。</p>`,
   ),
+  faq_block_source: msg(
+    `<h4 id="faq-source">ソースコードはどこですか？不具合はどこに報告しますか？</h4>
+<p><strong>${EXT_DISPLAY_NAME}</strong> のソースと Issue: <a href="${REPO_HOME_URL}" target="_blank" rel="noopener noreferrer">github.com/Blackphi6/video-speed-controller-plus</a>。上流（オリジナル）: <a href="${UPSTREAM_REPO_URL}" target="_blank" rel="noopener noreferrer">igrigorik/videospeed</a>。</p>`,
+  ),
 });
 
 Object.assign(zhCN, {
@@ -757,6 +777,7 @@ Object.assign(zhCN, {
   faq_toc_missing: msg('控制器不显示'),
   faq_toc_spa: msg('导航时速度重置'),
   faq_toc_audio: msg('音频支持'),
+  faq_toc_source: msg('源代码与问题反馈'),
   faq_block_local: msg(
     `<h4 id="faq-local">本地视频或无痕模式下不显示速度控件？</h4>
 <p>若要播放本地媒体（例如“文件 &gt; 打开文件”）或在无痕模式使用，需要手动为扩展授予额外权限。</p>
@@ -809,6 +830,10 @@ Object.assign(zhCN, {
   faq_block_audio: msg(
     `<h4 id="faq-audio">是否支持音频而不只是视频？</h4>
 <p>支持。当偏好设置中的<code>支持音频</code>开启（默认开启）时，控制器也会出现在 <code>&lt;audio&gt;</code> 上，速度与快捷键行为一致。</p>`,
+  ),
+  faq_block_source: msg(
+    `<h4 id="faq-source">源代码在哪里？如何反馈问题？</h4>
+<p><strong>${EXT_DISPLAY_NAME}</strong> 的源码与问题跟踪：<a href="${REPO_HOME_URL}" target="_blank" rel="noopener noreferrer">github.com/Blackphi6/video-speed-controller-plus</a>。上游（原版）项目：<a href="${UPSTREAM_REPO_URL}" target="_blank" rel="noopener noreferrer">igrigorik/videospeed</a>。</p>`,
   ),
 });
 
